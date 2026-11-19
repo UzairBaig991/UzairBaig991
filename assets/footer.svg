@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="150" viewBox="0 0 1200 150">
+<defs><linearGradient id="f" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#36BCF7"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+<rect width="1200" height="150" fill="#08090f" rx="18"/>
+<path d="M0 90 C200 40 400 140 600 90 S1000 40 1200 90 V150 H0Z" fill="url(#f)" fill-opacity=".18"><animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 90 C200 40 400 140 600 90 S1000 40 1200 90 V150 H0Z;M0 90 C200 140 400 40 600 90 S1000 140 1200 90 V150 H0Z;M0 90 C200 40 400 140 600 90 S1000 40 1200 90 V150 H0Z"/></path>
+<path d="M0 110 C250 70 450 150 700 105 S1050 70 1200 110 V150 H0Z" fill="url(#f)" fill-opacity=".3"><animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 110 C250 70 450 150 700 105 S1050 70 1200 110 V150 H0Z;M0 110 C250 150 450 70 700 105 S1050 150 1200 110 V150 H0Z;M0 110 C250 70 450 150 700 105 S1050 70 1200 110 V150 H0Z"/></path>
+<text x="600" y="62" text-anchor="middle" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="26" font-weight="700" fill="url(#f)">Thanks for visiting! Let's build something great together.</text>
+<text x="600" y="88" text-anchor="middle" font-family="Consolas, 'Courier New', monospace" font-size="14" fill="#8b949e">uzairbaig991.github.io/Portfolio</text>
+</svg>

@@ -74,6 +74,12 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 </div>
 
+<div align="center">
+
+<img src="assets/stats.svg" width="100%" alt="Profile stats: 50+ repositories, 2 internships, 6 core technologies, 1 Cisco certificate"/>
+
+</div>
+
 ---
 
 ## ⚡ Tech Stack
@@ -107,6 +113,38 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 ![HCI](https://img.shields.io/badge/HCI%20%26%20Computer%20Graphics-db61a2?style=flat-square)
 ![SE](https://img.shields.io/badge/Software%20Engineering-1BA0D7?style=flat-square)
 
+### 🗺️ Skills Map
+
+```mermaid
+mindmap
+  root((Uzair Baig))
+    Languages
+      C++
+      Python
+      JavaScript
+      Kotlin
+      Dart
+      PHP
+      Java
+    Web
+      React.js
+      Node.js
+      HTML and CSS
+      Bootstrap
+    Mobile
+      Flutter
+      Android Studio
+    Computer Science
+      Data Structures
+      Operating Systems
+      Artificial Intelligence
+      Compilers
+    Design
+      Figma
+      UI and UX
+      HCI
+```
+
 ---
 
 ## 🚀 Featured Projects
@@ -127,6 +165,20 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 <a href="https://github.com/UzairBaig991/UzairMart"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=UzairMart&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="UzairMart"/></a>
 <a href="https://github.com/UzairBaig991/MediCare-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=MediCare-&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="MediCare"/></a>
+
+</div>
+
+---
+
+## 📈 Portfolio at a Glance
+
+<div align="center">
+
+<img src="assets/projects-by-category.svg" width="100%" alt="Projects by category"/>
+
+<br/><br/>
+
+<img src="assets/project-activity.svg" width="100%" alt="Project activity by month"/>
 
 </div>
 
@@ -222,12 +274,14 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 <!-- Built from your repository history. EDIT any milestone to match your story. -->
 
-| When | Milestone |
-|:---:|---|
-| **2024** | 🌱 Started pushing code: DSA tasks, Assembly and Computer Organization labs, and a DSA collaboration project |
-| **2025** | 📈 Went deeper into algorithms, HCI and computer graphics, and built early full-stack apps like Prescripto |
-| **2026** | 🚀 Shipped 30+ projects across web, mobile, AI and systems, completed internships at **Arch Technologies** and **Syntecxhub**, and earned the **Cisco C++** certificate |
-| **Next** | 🎨 Growing into UI/UX design while building bigger, polished products |
+```mermaid
+timeline
+    title My Journey as a Developer
+    2024 : Started shipping code : DSA, Assembly and COA labs : First collaboration project
+    2025 : Algorithms, HCI and Computer Graphics : First full-stack app, Prescripto
+    2026 : 30+ projects shipped : Internships at Arch Technologies and Syntecxhub : Cisco C++ certified
+    Next : Growing into UI and UX design : Building bigger, polished products
+```
 
 ---
 
@@ -292,6 +346,16 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 <td align="center" width="25%">🧠<br/><b>Problem Solving</b><br/><sub>Algorithms, AI and systems projects</sub></td>
 </tr>
 </table>
+
+### ⚙️ How I Work
+
+```mermaid
+flowchart LR
+    A([💡 Idea]) --> B([🎨 Design in Figma]) --> C([💻 Build]) --> D([🧪 Test]) --> E([🚀 Deploy]) --> F([🔁 Improve])
+    F -.-> A
+    classDef step fill:#0d1117,stroke:#36BCF7,stroke-width:2px,color:#e6edf3
+    class A,B,C,D,E,F step
+```
 
 ### 🤝 Why Work With Me
 
@@ -372,6 +436,6 @@ I'm open to **internships, collaborations and freelance work**. If you have an i
 
 ⭐ **If you like my work, consider starring my repositories!** ⭐
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:2c5364,50:203a43,100:0f2027&section=footer&text=Thanks%20for%20visiting!&fontColor=36BCF7&fontSize=26&fontAlignY=70" width="100%" alt="Footer"/>
+<img src="assets/footer.svg" width="100%" alt="Thanks for visiting"/>
 
 </div>
