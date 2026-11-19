@@ -4,10 +4,10 @@
 <div align="center">
 
 <!-- ===== BANNER ===== -->
-<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:0f2027,35:203a43,70:2c5364,100:36BCF7&text=Uzair%20Baig&fontColor=ffffff&fontSize=88&fontAlign=50&fontAlignY=38&stroke=0f2027&strokeWidth=2&desc=Software%20Engineer%20%E2%80%A2%20Web%20%26%20Mobile%20Developer%20%E2%80%A2%20Aspiring%20UI%2FUX%20Designer&descSize=21&descAlign=50&descAlignY=60&animation=fadeIn" width="100%" alt="Uzair Baig"/>
+<img src="assets/banner.svg" width="100%" alt="Uzair Baig - Software Engineer, Full-Stack and Mobile Developer"/>
 
-<a href="https://uzairbaig991.github.io/UzairBaig.github.io/">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3200&pause=1100&color=36BCF7&center=true&vCenter=true&width=820&height=50&lines=Hi+there!+I'm+Uzair+Baig+%F0%9F%91%8B;BS+Software+Engineering+Student+%F0%9F%8E%93;I+build+web+%26+mobile+apps+%F0%9F%92%BB;I+love+clean+UI+and+great+UX+%F0%9F%8E%A8;Cisco+C%2B%2B+Certified+%E2%9C%85;Ex-Intern+%40+Arch+Technologies+%26+Syntecxhub+%F0%9F%92%BC" alt="Typing intro" />
+<a href="https://uzairbaig991.github.io/Portfolio/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3200&pause=1100&color=36BCF7&center=true&vCenter=true&width=820&height=50&lines=Hi+there!+I'm+Uzair+Baig+%F0%9F%91%8B;BS+SE+%40+Riphah+International+University+%F0%9F%8E%93;I+build+web+%26+mobile+apps+%F0%9F%92%BB;I+love+clean+UI+and+great+UX+%F0%9F%8E%A8;Cisco+C%2B%2B+Certified+%E2%9C%85;Ex-Intern+%40+Arch+Technologies+%26+Syntecxhub+%F0%9F%92%BC" alt="Typing intro" />
 </a>
 
 <br/>
@@ -38,7 +38,7 @@
 
 > *"I turn ideas into clean, working software, and I'm growing into a designer who cares how it feels to use."*
 
-Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**, a **BS Software Engineering** student with hands-on experience from **two internships** and a **Cisco C++ certification**. I build web apps, mobile apps, AI tools and system simulators, and my goal is to become a **UI/UX Designer** who can also write the code behind the design.
+Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software Engineering** student at **Riphah International University** (Rawalpindi) with hands-on experience from **two internships** and a **Cisco C++ certification**. I build web apps, mobile apps, AI tools and system simulators, and my goal is to become a **UI/UX Designer** who can also write the code behind the design.
 
 <div align="center">
 
@@ -58,7 +58,7 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**, a **BS Software Engineering**
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
-| 📍 **Based in** | Pakistan (UTC+5) |
+| 📍 **Based in** | Rawalpindi, Pakistan (UTC+5) |
 | ⚡ **Fun fact** | I've built everything from a Ludo game to an OS simulator |
 
 </td>
@@ -67,7 +67,9 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**, a **BS Software Engineering**
 
 <div align="center">
 
-[![Portfolio Website](https://img.shields.io/badge/%F0%9F%8C%90%20View%20My%20Portfolio%20Website-36BCF7?style=for-the-badge)](https://uzairbaig991.github.io/UzairBaig.github.io/)
+[![Portfolio Website](https://img.shields.io/badge/%F0%9F%8C%90%20View%20My%20Portfolio%20Website-36BCF7?style=for-the-badge)](https://uzairbaig991.github.io/Portfolio/)
+[![Resume](https://img.shields.io/badge/%F0%9F%93%84%20Download%20Resume-8b5cf6?style=for-the-badge)](https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf)
+[![LinkedIn](https://img.shields.io/badge/%F0%9F%92%BC%20LinkedIn-0077B5?style=for-the-badge)](https://www.linkedin.com/in/uzair-baig-b502ab2a5)
 [![Email Me](https://img.shields.io/badge/%F0%9F%93%A7%20Email%20Me-D14836?style=for-the-badge)](mailto:baiguzair53@gmail.com)
 
 </div>
@@ -81,7 +83,7 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**, a **BS Software Engineering**
 <div align="center">
 
 **Languages**<br/>
-<img src="https://skillicons.dev/icons?i=html,css,js,php,py,java,cpp,c&theme=dark" alt="Languages"/>
+<img src="https://skillicons.dev/icons?i=html,css,js,php,py,java,kotlin,dart,cpp,c&theme=dark" alt="Languages"/>
 
 **Web & Mobile**<br/>
 <img src="https://skillicons.dev/icons?i=react,bootstrap,tailwind,androidstudio,flutter&theme=dark" alt="Web and Mobile"/>
@@ -275,7 +277,7 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 ## 🎓 Education
 
-- 🏫 **BS Software Engineering**, *in progress* <!-- EDIT: add your university name and years -->
+- 🏫 **BS Software Engineering**, **Riphah International University**, Rawalpindi *(in progress)*
 - 📘 **Coursework:** Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Compiler Construction, Web Programming, Mobile App Development, HCI & Computer Graphics, Computer Organization, Assembly Language
 
 ---
@@ -324,6 +326,20 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 ---
 
+### 🧾 Profile Summary
+
+<div align="center">
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=UzairBaig991&theme=tokyonight" alt="Profile details" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=UzairBaig991&theme=tokyonight" alt="Repos per language" width="49%"/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=UzairBaig991&theme=tokyonight" alt="Most commit language" width="49%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=UzairBaig991&theme=tokyonight" alt="Stats" width="49%"/>
+
+</div>
+
+---
+
 ## 🎯 Goals & Roadmap
 
 - [x] Build 50+ projects across web, mobile, AI and systems
@@ -345,10 +361,10 @@ I'm open to **internships, collaborations and freelance work**. If you have an i
 <br/>
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:baiguzair53@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=googlechrome&logoColor=white)](https://uzairbaig991.github.io/UzairBaig.github.io/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=googlechrome&logoColor=white)](https://uzairbaig991.github.io/Portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UzairBaig991)
-<!-- EDIT: add LinkedIn if you have one:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/your-handle) -->
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uzair-baig-b502ab2a5)
+[![Resume](https://img.shields.io/badge/Resume-CV-8b5cf6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf)
 
 <br/>
 
