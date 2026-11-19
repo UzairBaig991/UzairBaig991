@@ -363,13 +363,11 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 ### ⚙️ How I Work
 
-```mermaid
-flowchart LR
-    A([💡 Idea]) --> B([🎨 Design in Figma]) --> C([💻 Build]) --> D([🧪 Test]) --> E([🚀 Deploy]) --> F([🔁 Improve])
-    F -.-> A
-    classDef step fill:#0d1117,stroke:#36BCF7,stroke-width:2px,color:#e6edf3
-    class A,B,C,D,E,F step
-```
+<div align="center">
+
+<img src="assets/workflow.svg" width="100%" alt="How I work: Idea, Design, Build, Test, Deploy, Improve"/>
+
+</div>
 
 ### 🤝 Why Work With Me
 
