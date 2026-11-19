@@ -1,47 +1,52 @@
 <!-- Profile README for github.com/UzairBaig991
-     Save as README.md in a PUBLIC repo named exactly: UzairBaig991 -->
+     Search for "EDIT:" to find details you can still personalize. -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f2027,50:203a43,100:2c5364&section=header&animation=twinkling" width="100%" alt="Header"/>
+<!-- ===== BANNER ===== -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=300&color=0:0f2027,35:203a43,70:2c5364,100:36BCF7&text=Uzair%20Baig&fontColor=ffffff&fontSize=88&fontAlign=50&fontAlignY=38&stroke=0f2027&strokeWidth=2&desc=Software%20Engineer%20%E2%80%A2%20Web%20%26%20Mobile%20Developer%20%E2%80%A2%20Aspiring%20UI%2FUX%20Designer&descSize=21&descAlign=50&descAlignY=60&animation=fadeIn" width="100%" alt="Uzair Baig"/>
 
-<!-- Name is rendered as large text so it is always readable (light and dark mode) -->
-<h1 align="center">✨ Uzair Baig ✨</h1>
-
-<a href="https://github.com/UzairBaig991">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=46&duration=3000&pause=1500&color=36BCF7&center=true&vCenter=true&width=700&height=70&lines=UZAIR+BAIG;Software+Engineer;UI%2FUX+Enthusiast" alt="Uzair Baig" />
+<a href="https://uzairbaig991.github.io/UzairBaig.github.io/">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=3200&pause=1100&color=36BCF7&center=true&vCenter=true&width=820&height=50&lines=Hi+there!+I'm+Uzair+Baig+%F0%9F%91%8B;BS+Software+Engineering+Student+%F0%9F%8E%93;I+build+web+%26+mobile+apps+%F0%9F%92%BB;I+love+clean+UI+and+great+UX+%F0%9F%8E%A8;Cisco+C%2B%2B+Certified+%E2%9C%85;Ex-Intern+%40+Arch+Technologies+%26+Syntecxhub+%F0%9F%92%BC" alt="Typing intro" />
 </a>
 
-<a href="https://github.com/UzairBaig991">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=F7B731&center=true&vCenter=true&width=760&lines=BS+Software+Engineering+Student+%F0%9F%8E%93;Web+%26+Mobile+App+Developer+%F0%9F%92%BB;Aspiring+UI%2FUX+Designer+%F0%9F%8E%A8;Cisco+C%2B%2B+Certified+%E2%9C%85;Ex-Intern+%40+Arch+Technologies+%26+Syntecxhub+%F0%9F%92%BC" alt="Roles" />
-</a>
-
-<br/><br/>
+<br/>
 
 ![Profile Views](https://komarev.com/ghpvc/?username=UzairBaig991&label=Profile%20Views&color=0e75b6&style=for-the-badge)
 ![Followers](https://img.shields.io/github/followers/UzairBaig991?label=Followers&style=for-the-badge&logo=github&color=2c5364)
 ![Repos](https://img.shields.io/badge/Public%20Repos-50%2B-203a43?style=for-the-badge&logo=github&logoColor=white)
+![Certified](https://img.shields.io/badge/Cisco-C%2B%2B%20Certified-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-2ea44f?style=for-the-badge)
 
 <br/>
 
-**[About](#-about-me)** •
-**[Skills](#-tech-stack)** •
-**[Projects](#-featured-projects)** •
-**[More Work](#-more-projects)** •
-**[Education](#-education)** •
-**[Experience](#-internship-experience)** •
-**[Certificates](#-certifications)** •
-**[Services](#-what-i-do)** •
-**[Contact](#-lets-connect)**
+[🏠 About](#-about-me) ·
+[⚡ Skills](#-tech-stack) ·
+[🚀 Projects](#-featured-projects) ·
+[🗂️ More Work](#%EF%B8%8F-more-projects) ·
+[🛣️ Journey](#%EF%B8%8F-my-journey) ·
+[💼 Experience](#-internship-experience) ·
+[📜 Certificates](#-certifications) ·
+[🎓 Education](#-education) ·
+[📫 Contact](#-lets-connect)
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:36BCF7,100:2c5364&height=3" width="100%" alt=""/>
 
 </div>
 
----
+## 🏠 About Me
 
-## 👨‍💻 About Me
+> *"I turn ideas into clean, working software, and I'm growing into a designer who cares how it feels to use."*
 
-Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS in Software Engineering** and I want to grow into a **UI/UX Designer**. I like building real projects, from web apps and mobile apps to AI tools and system simulators, and turning them into clean, usable products.
+Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**, a **BS Software Engineering** student with hands-on experience from **two internships** and a **Cisco C++ certification**. I build web apps, mobile apps, AI tools and system simulators, and my goal is to become a **UI/UX Designer** who can also write the code behind the design.
+
+<div align="center">
+
+| 🎓 Studying | 💼 Internships | 📜 Certified | 📦 Projects | 🎯 Goal |
+|:---:|:---:|:---:|:---:|:---:|
+| **BS Software Engineering** | **2** (Arch Technologies, Syntecxhub) | **Cisco C++** | **50+ repos** | **UI/UX Designer** |
+
+</div>
 
 <table>
 <tr>
@@ -49,13 +54,12 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 
 | | |
 |---|---|
-| 🎓 **Studying** | BS Software Engineering |
-| 🎨 **Career goal** | UI/UX Designer |
-| 💼 **Internships** | Arch Technologies · Syntecxhub |
-| 📜 **Certified** | Cisco C++ |
-| 🔭 **Recently built** | EcoSwap, RoyalLudo, StockWise-AI, PDFForge |
-| 🤝 **Open to** | Internships, collaborations, freelance |
+| 🔭 **Recently built** | StockWise-AI · EcoSwap · RoyalLudo · PDFForge · AutoFlow |
+| 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
+| 🤝 **Open to** | Internships, collaborations, freelance projects |
+| 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
 | 📍 **Based in** | Pakistan (UTC+5) |
+| ⚡ **Fun fact** | I've built everything from a Ludo game to an OS simulator |
 
 </td>
 </tr>
@@ -63,35 +67,43 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 
 <div align="center">
 
-[![Portfolio Website](https://img.shields.io/badge/View%20My%20Portfolio%20Website-36BCF7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://uzairbaig991.github.io/UzairBaig.github.io/)
+[![Portfolio Website](https://img.shields.io/badge/%F0%9F%8C%90%20View%20My%20Portfolio%20Website-36BCF7?style=for-the-badge)](https://uzairbaig991.github.io/UzairBaig.github.io/)
+[![Email Me](https://img.shields.io/badge/%F0%9F%93%A7%20Email%20Me-D14836?style=for-the-badge)](mailto:baiguzair53@gmail.com)
 
 </div>
 
 ---
 
-## 🛠️ Tech Stack
+## ⚡ Tech Stack
 
-<!-- Based on the kinds of projects in your repos. Remove icons you don't use. -->
+<!-- Remove any icon for tools you don't actually use. -->
 
 <div align="center">
 
-### Languages
+**Languages**<br/>
 <img src="https://skillicons.dev/icons?i=html,css,js,php,py,java,cpp,c&theme=dark" alt="Languages"/>
 
-### Web & Mobile
+**Web & Mobile**<br/>
 <img src="https://skillicons.dev/icons?i=react,bootstrap,tailwind,androidstudio,flutter&theme=dark" alt="Web and Mobile"/>
 
-### Backend & Databases
+**Backend & Databases**<br/>
 <img src="https://skillicons.dev/icons?i=nodejs,express,mysql,mongodb,firebase&theme=dark" alt="Backend"/>
 
-### Design & Tools
+**Design & Tools**<br/>
 <img src="https://skillicons.dev/icons?i=figma,git,github,vscode,postman,linux&theme=dark" alt="Tools"/>
 
 </div>
 
-### 📚 Core Computer Science Areas
+### 🧠 Core Computer Science
 
-`Data Structures & Algorithms` · `Operating Systems` · `Artificial Intelligence` · `Compiler Construction` · `Web Programming` · `Mobile App Development` · `HCI & Computer Graphics` · `Software Engineering`
+![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-0e75b6?style=flat-square)
+![OS](https://img.shields.io/badge/Operating%20Systems-2c5364?style=flat-square)
+![AI](https://img.shields.io/badge/Artificial%20Intelligence-6f42c1?style=flat-square)
+![Compilers](https://img.shields.io/badge/Compiler%20Construction-d73a49?style=flat-square)
+![Web](https://img.shields.io/badge/Web%20Programming-e36209?style=flat-square)
+![Mobile](https://img.shields.io/badge/Mobile%20App%20Development-2ea44f?style=flat-square)
+![HCI](https://img.shields.io/badge/HCI%20%26%20Computer%20Graphics-db61a2?style=flat-square)
+![SE](https://img.shields.io/badge/Software%20Engineering-1BA0D7?style=flat-square)
 
 ---
 
@@ -99,17 +111,20 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 
 <div align="center">
 
-<a href="https://github.com/UzairBaig991/StockWise-AI"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=StockWise-AI&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="StockWise-AI"/></a>
-<a href="https://github.com/UzairBaig991/EcoSwap-MAD-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=EcoSwap-MAD-Project&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="EcoSwap"/></a>
+<a href="https://github.com/UzairBaig991/StockWise-AI"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=StockWise-AI&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="StockWise-AI"/></a>
+<a href="https://github.com/UzairBaig991/EcoSwap-MAD-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=EcoSwap-MAD-Project&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="EcoSwap"/></a>
 
-<a href="https://github.com/UzairBaig991/RoyalLudo"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=RoyalLudo&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="RoyalLudo"/></a>
-<a href="https://github.com/UzairBaig991/PDFForge"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=PDFForge&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="PDFForge"/></a>
+<a href="https://github.com/UzairBaig991/RoyalLudo"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=RoyalLudo&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="RoyalLudo"/></a>
+<a href="https://github.com/UzairBaig991/PDFForge"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=PDFForge&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="PDFForge"/></a>
 
-<a href="https://github.com/UzairBaig991/Enterprise-Flow-ERP"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Enterprise-Flow-ERP&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="Enterprise Flow ERP"/></a>
-<a href="https://github.com/UzairBaig991/OS-Simulator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=OS-Simulator&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="OS Simulator"/></a>
+<a href="https://github.com/UzairBaig991/Enterprise-Flow-ERP"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Enterprise-Flow-ERP&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="Enterprise Flow ERP"/></a>
+<a href="https://github.com/UzairBaig991/OS-Simulator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=OS-Simulator&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="OS Simulator"/></a>
 
-<a href="https://github.com/UzairBaig991/AutoFlow"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=AutoFlow&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="AutoFlow"/></a>
-<a href="https://github.com/UzairBaig991/Movie-Recommendation-System"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Movie-Recommendation-System&theme=tokyonight&hide_border=true&bg_color=0f2027" alt="Movie Recommendation System"/></a>
+<a href="https://github.com/UzairBaig991/AutoFlow"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=AutoFlow&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="AutoFlow"/></a>
+<a href="https://github.com/UzairBaig991/Movie-Recommendation-System"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Movie-Recommendation-System&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="Movie Recommendation System"/></a>
+
+<a href="https://github.com/UzairBaig991/UzairMart"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=UzairMart&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="UzairMart"/></a>
+<a href="https://github.com/UzairBaig991/MediCare-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=MediCare-&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="MediCare"/></a>
 
 </div>
 
@@ -142,7 +157,7 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 </details>
 
 <details>
-<summary><b>🧩 Syntecxhub Projects</b></summary>
+<summary><b>🧩 Syntecxhub Internship Projects</b></summary>
 <br/>
 
 | Project | Link |
@@ -189,6 +204,7 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 | 🌐 Web Programming (weekly work) | [Main](https://github.com/UzairBaig991/Web-Programming) · [Wk 6](https://github.com/UzairBaig991/WebProgramming6th-Week) · [Wk 8](https://github.com/UzairBaig991/WebProgramming8th-Week) · [Wk 10](https://github.com/UzairBaig991/WebProgramming10th-Week) |
 | 🐘 PHP Practice | [Code](https://github.com/UzairBaig991/PHP-Practice) |
 | 📦 All Software Projects | [Code](https://github.com/UzairBaig991/ALLSOFTWAREPROJECTS1) |
+| 📁 Early Projects | [Code](https://github.com/UzairBaig991/PROJECTS) |
 
 </details>
 
@@ -200,27 +216,22 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 
 ---
 
-## 💼 What I Do
+## 🛣️ My Journey
 
-<table>
-<tr>
-<td align="center" width="25%">🌐<br/><b>Web Development</b><br/><sub>Responsive websites and web apps</sub></td>
-<td align="center" width="25%">📱<br/><b>Mobile Apps</b><br/><sub>Android apps built in the MAD course and beyond</sub></td>
-<td align="center" width="25%">🎨<br/><b>UI/UX Design</b><br/><sub>Clean, user-friendly interfaces</sub></td>
-<td align="center" width="25%">🧠<br/><b>Problem Solving</b><br/><sub>Algorithms, AI, and systems projects</sub></td>
-</tr>
-</table>
+<!-- Built from your repository history. EDIT any milestone to match your story. -->
+
+| When | Milestone |
+|:---:|---|
+| **2024** | 🌱 Started pushing code: DSA tasks, Assembly and Computer Organization labs, and a DSA collaboration project |
+| **2025** | 📈 Went deeper into algorithms, HCI and computer graphics, and built early full-stack apps like Prescripto |
+| **2026** | 🚀 Shipped 30+ projects across web, mobile, AI and systems, completed internships at **Arch Technologies** and **Syntecxhub**, and earned the **Cisco C++** certificate |
+| **Next** | 🎨 Growing into UI/UX design while building bigger, polished products |
 
 ---
 
-## 🎓 Education
-
-- 🏫 **BS Software Engineering**, *in progress* <!-- EDIT: add your university name and years -->
-- 📘 **Coursework:** Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Compiler Construction, Web Programming, Mobile App Development, HCI & Computer Graphics
-
 ## 💼 Internship Experience
 
-<!-- EDIT: add your exact role titles and dates in place of the "Intern" lines -->
+<!-- EDIT: add your exact role titles and dates in place of the "Intern" lines. -->
 
 <table>
 <tr>
@@ -237,25 +248,56 @@ Hands-on industry experience working on real software tasks and building practic
 ### 🏢 Syntecxhub
 **Intern** · *add dates here*
 
-Completed a series of real-world projects, including an <a href="https://github.com/UzairBaig991/Syntecxhub-E-commerce-store">E-commerce Store</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Task-Manager">Task Manager</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-User-Management-System">User Management System</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Weather-App">Weather App</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Expense-Tracker">Expense Tracker</a> and <a href="https://github.com/UzairBaig991/Syntecxhub-Notes-App">Notes App</a>.
+Delivered a series of real-world projects: <a href="https://github.com/UzairBaig991/Syntecxhub-E-commerce-store">E-commerce Store</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Task-Manager">Task Manager</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-User-Management-System">User Management System</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Weather-App">Weather App</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Expense-Tracker">Expense Tracker</a> and <a href="https://github.com/UzairBaig991/Syntecxhub-Notes-App">Notes App</a>.
 
 </td>
 </tr>
 </table>
 
-## 🏆 Certifications
+---
+
+## 📜 Certifications
+
+<div align="center">
 
 | Certificate | Issuer | Skills |
-|---|---|---|
-| 📜 **C++ Certification** | **Cisco** | C++ programming, problem solving, object-oriented concepts |
-
-<!-- EDIT: add the exact certificate title, year, and a credential link if you have one -->
-<div align="center">
+|:---:|:---:|:---:|
+| 🏅 **C++ Certification** | **Cisco** | C++ programming · Problem solving · Object-oriented concepts |
 
 ![Cisco](https://img.shields.io/badge/Cisco-C%2B%2B%20Certified-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 </div>
+
+<!-- EDIT: add the full certificate title, year and credential link. -->
+
+---
+
+## 🎓 Education
+
+- 🏫 **BS Software Engineering**, *in progress* <!-- EDIT: add your university name and years -->
+- 📘 **Coursework:** Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Compiler Construction, Web Programming, Mobile App Development, HCI & Computer Graphics, Computer Organization, Assembly Language
+
+---
+
+## 🧩 What I Do
+
+<table>
+<tr>
+<td align="center" width="25%">🌐<br/><b>Web Development</b><br/><sub>Responsive websites and full web apps</sub></td>
+<td align="center" width="25%">📱<br/><b>Mobile Apps</b><br/><sub>Android apps from the MAD course and beyond</sub></td>
+<td align="center" width="25%">🎨<br/><b>UI/UX Design</b><br/><sub>Clean, user-friendly interfaces</sub></td>
+<td align="center" width="25%">🧠<br/><b>Problem Solving</b><br/><sub>Algorithms, AI and systems projects</sub></td>
+</tr>
+</table>
+
+### 🤝 Why Work With Me
+
+- ✅ **I ship real projects.** 50+ repositories across web, mobile, AI and systems
+- ✅ **Industry-tested.** Internship experience at Arch Technologies and Syntecxhub
+- ✅ **Strong fundamentals.** Cisco C++ certified, with a solid DSA, OS and compiler background
+- ✅ **Design-minded.** I care about how software looks and feels, not just how it runs
+- ✅ **Always learning.** Actively growing toward a UI/UX career
 
 ---
 
@@ -263,16 +305,16 @@ Completed a series of real-world projects, including an <a href="https://github.
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=UzairBaig991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&bg_color=0f2027" alt="GitHub Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UzairBaig991&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0f2027" alt="Top Languages"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=UzairBaig991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UzairBaig991&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0f2027&title_color=36BCF7" alt="Top Languages"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=UzairBaig991&theme=tokyonight&hide_border=true&background=0f2027" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com?user=UzairBaig991&theme=tokyonight&hide_border=true&background=0f2027&ring=36BCF7&fire=F7B731&currStreakLabel=36BCF7" alt="GitHub Streak"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=UzairBaig991&theme=react-dark&hide_border=true&area=true&bg_color=0f2027" alt="Activity Graph" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=UzairBaig991&theme=react-dark&hide_border=true&area=true&bg_color=0f2027&color=36BCF7&line=36BCF7&point=ffffff" alt="Activity Graph" width="100%"/>
 
 <br/>
 
@@ -290,13 +332,17 @@ Completed a series of real-world projects, including an <a href="https://github.
 - [x] Earn the Cisco C++ certification
 - [ ] Grow into a professional UI/UX Designer
 - [ ] Contribute to open-source projects
-- [ ] Land a software / design internship
+- [ ] Land a software or design role
 
 ---
 
 ## 📫 Let's Connect
 
 <div align="center">
+
+I'm open to **internships, collaborations and freelance work**. If you have an idea or a team that needs a motivated developer-designer, let's talk!
+
+<br/>
 
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:baiguzair53@gmail.com)
 [![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=googlechrome&logoColor=white)](https://uzairbaig991.github.io/UzairBaig.github.io/)
@@ -310,6 +356,6 @@ Completed a series of real-world projects, including an <a href="https://github.
 
 ⭐ **If you like my work, consider starring my repositories!** ⭐
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:2c5364,50:203a43,100:0f2027&section=footer" width="100%" alt="Footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:2c5364,50:203a43,100:0f2027&section=footer&text=Thanks%20for%20visiting!&fontColor=36BCF7&fontSize=26&fontAlignY=70" width="100%" alt="Footer"/>
 
 </div>
