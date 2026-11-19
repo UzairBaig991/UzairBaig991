@@ -3,10 +3,17 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=venom&height=260&color=0:0f2027,50:203a43,100:2c5364&text=Uzair%20Baig&fontColor=ffffff&fontSize=70&fontAlignY=40&desc=Software%20Engineering%20Student%20%E2%80%A2%20Developer%20%E2%80%A2%20Aspiring%20UI%2FUX%20Designer&descSize=18&descAlignY=62&animation=twinkling" width="100%" alt="Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=180&color=0:0f2027,50:203a43,100:2c5364&section=header&animation=twinkling" width="100%" alt="Header"/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1200&color=36BCF7&center=true&vCenter=true&width=700&lines=Hi+there!+I'm+Uzair+%F0%9F%91%8B;BS+Software+Engineering+Student+%F0%9F%8E%93;Web+%26+Mobile+App+Developer+%F0%9F%92%BB;Aspiring+UI%2FUX+Designer+%F0%9F%8E%A8;Open+to+internships+%26+collaborations+%F0%9F%9A%80" alt="Typing SVG" />
+<!-- Name is rendered as large text so it is always readable (light and dark mode) -->
+<h1 align="center">✨ Uzair Baig ✨</h1>
+
+<a href="https://github.com/UzairBaig991">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=800&size=46&duration=3000&pause=1500&color=36BCF7&center=true&vCenter=true&width=700&height=70&lines=UZAIR+BAIG;Software+Engineer;UI%2FUX+Enthusiast" alt="Uzair Baig" />
+</a>
+
+<a href="https://github.com/UzairBaig991">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1200&color=F7B731&center=true&vCenter=true&width=760&lines=BS+Software+Engineering+Student+%F0%9F%8E%93;Web+%26+Mobile+App+Developer+%F0%9F%92%BB;Aspiring+UI%2FUX+Designer+%F0%9F%8E%A8;Cisco+C%2B%2B+Certified+%E2%9C%85;Ex-Intern+%40+Arch+Technologies+%26+Syntecxhub+%F0%9F%92%BC" alt="Roles" />
 </a>
 
 <br/><br/>
@@ -23,6 +30,8 @@
 **[Projects](#-featured-projects)** •
 **[More Work](#-more-projects)** •
 **[Education](#-education)** •
+**[Experience](#-internship-experience)** •
+**[Certificates](#-certifications)** •
 **[Services](#-what-i-do)** •
 **[Contact](#-lets-connect)**
 
@@ -42,6 +51,8 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 |---|---|
 | 🎓 **Studying** | BS Software Engineering |
 | 🎨 **Career goal** | UI/UX Designer |
+| 💼 **Internships** | Arch Technologies · Syntecxhub |
+| 📜 **Certified** | Cisco C++ |
 | 🔭 **Recently built** | EcoSwap, RoyalLudo, StockWise-AI, PDFForge |
 | 🤝 **Open to** | Internships, collaborations, freelance |
 | 📍 **Based in** | Pakistan (UTC+5) |
@@ -207,11 +218,44 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 - 🏫 **BS Software Engineering**, *in progress* <!-- EDIT: add your university name and years -->
 - 📘 **Coursework:** Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Compiler Construction, Web Programming, Mobile App Development, HCI & Computer Graphics
 
-## 🏆 Certifications & Experience
+## 💼 Internship Experience
 
-<!-- EDIT: add internships (e.g. Syntecxhub, if it was one), certificates, hackathons, awards -->
-- 💼 *Add your internship / experience here*
-- 🎖️ *Add certifications here*
+<!-- EDIT: add your exact role titles and dates in place of the "Intern" lines -->
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 🏢 Arch Technologies
+**Intern** · *add dates here*
+
+Hands-on industry experience working on real software tasks and building practical skills in a professional environment.
+
+</td>
+<td width="50%" valign="top">
+
+### 🏢 Syntecxhub
+**Intern** · *add dates here*
+
+Completed a series of real-world projects, including an <a href="https://github.com/UzairBaig991/Syntecxhub-E-commerce-store">E-commerce Store</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Task-Manager">Task Manager</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-User-Management-System">User Management System</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Weather-App">Weather App</a>, <a href="https://github.com/UzairBaig991/Syntecxhub-Expense-Tracker">Expense Tracker</a> and <a href="https://github.com/UzairBaig991/Syntecxhub-Notes-App">Notes App</a>.
+
+</td>
+</tr>
+</table>
+
+## 🏆 Certifications
+
+| Certificate | Issuer | Skills |
+|---|---|---|
+| 📜 **C++ Certification** | **Cisco** | C++ programming, problem solving, object-oriented concepts |
+
+<!-- EDIT: add the exact certificate title, year, and a credential link if you have one -->
+<div align="center">
+
+![Cisco](https://img.shields.io/badge/Cisco-C%2B%2B%20Certified-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+
+</div>
 
 ---
 
@@ -242,6 +286,8 @@ Hi, I'm **Uzair Baig** from **Pakistan 🇵🇰**. I'm currently pursuing a **BS
 
 - [x] Build 50+ projects across web, mobile, AI and systems
 - [x] Launch a personal portfolio website
+- [x] Complete internships at Arch Technologies and Syntecxhub
+- [x] Earn the Cisco C++ certification
 - [ ] Grow into a professional UI/UX Designer
 - [ ] Contribute to open-source projects
 - [ ] Land a software / design internship
