@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="48" viewBox="0 0 160 48">
+<defs>
+<linearGradient id="b" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="160" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#ff5f57"/><stop offset="1" stop-color="#f7b731"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="160 0" dur="4s" repeatCount="indefinite"/></linearGradient>
+<clipPath id="c"><rect x="2" y="2" width="156" height="44" rx="22"/></clipPath>
+</defs>
+<rect x="2" y="2" width="156" height="44" rx="22" fill="url(#b)"/>
+<g clip-path="url(#c)"><rect y="-6" width="34" height="60" fill="#fff" opacity=".28" transform="skewX(-20)"><animate attributeName="x" values="-80;220;220" keyTimes="0;.55;1" dur="3.2s" repeatCount="indefinite"/></rect></g>
+<rect x="1.5" y="1.5" width="157" height="45" rx="22.5" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.5"><animate attributeName="stroke-opacity" values=".15;.6;.15" dur="2.4s" repeatCount="indefinite"/></rect>
+<text x="80.0" y="30" text-anchor="middle" font-family="'Segoe UI', Roboto, Arial, sans-serif" font-size="16" font-weight="700" fill="#fff">📧  Email Me</text>
+</svg>

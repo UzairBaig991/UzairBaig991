@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="64" viewBox="0 0 1000 64">
+<defs>
+<linearGradient id="m" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="500" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#36BCF7"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#db61a2"/>
+<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="500 0" dur="6s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="fade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#08090f"/><stop offset=".08" stop-color="#08090f" stop-opacity="0"/><stop offset=".92" stop-color="#08090f" stop-opacity="0"/><stop offset="1" stop-color="#08090f"/></linearGradient>
+<clipPath id="v"><rect x="2" y="2" width="996" height="60" rx="14"/></clipPath>
+</defs>
+<rect width="1000" height="64" rx="16" fill="#08090f"/>
+<g clip-path="url(#v)"><g>
+<animateTransform attributeName="transform" type="translate" from="0 0" to="-2284 0" dur="50s" repeatCount="indefinite"/>
+<text x="0" y="40" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#m)" xml:space="preserve" textLength="2284" lengthAdjust="spacing">C++   ◆   Python   ◆   React.js   ◆   Node.js   ◆   Flutter   ◆   Kotlin   ◆   JavaScript   ◆   HTML   ◆   CSS   ◆   PHP   ◆   Java   ◆   Figma   ◆   Git   ◆   GitHub   ◆   </text>
+<text x="2284" y="40" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#m)" xml:space="preserve" textLength="2284" lengthAdjust="spacing">C++   ◆   Python   ◆   React.js   ◆   Node.js   ◆   Flutter   ◆   Kotlin   ◆   JavaScript   ◆   HTML   ◆   CSS   ◆   PHP   ◆   Java   ◆   Figma   ◆   Git   ◆   GitHub   ◆   </text>
+<text x="4568" y="40" font-family="Consolas, 'Courier New', monospace" font-size="22" font-weight="700" fill="url(#m)" xml:space="preserve" textLength="2284" lengthAdjust="spacing">C++   ◆   Python   ◆   React.js   ◆   Node.js   ◆   Flutter   ◆   Kotlin   ◆   JavaScript   ◆   HTML   ◆   CSS   ◆   PHP   ◆   Java   ◆   Figma   ◆   Git   ◆   GitHub   ◆   </text>
+</g></g>
+<rect x="2" y="2" width="996" height="60" rx="14" fill="url(#fade)"/>
+<rect x="1" y="1" width="998" height="62" rx="15" fill="none" stroke="#36BCF7" stroke-opacity=".35" stroke-width="2"/>
+</svg>

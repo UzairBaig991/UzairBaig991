@@ -20,21 +20,22 @@
 
 <br/>
 
-[🏠 About](#-about-me) ·
-[⚡ Skills](#-tech-stack) ·
-[🚀 Projects](#-featured-projects) ·
-[🗂️ More Work](#%EF%B8%8F-more-projects) ·
-[🛣️ Journey](#%EF%B8%8F-my-journey) ·
-[💼 Experience](#-internship-experience) ·
-[📜 Certificates](#-certifications) ·
-[🎓 Education](#-education) ·
-[📫 Contact](#-lets-connect)
+<a href="#about"><b>🏠 About</b></a> &nbsp;·&nbsp;
+<a href="#tech"><b>⚡ Skills</b></a> &nbsp;·&nbsp;
+<a href="#projects"><b>🚀 Projects</b></a> &nbsp;·&nbsp;
+<a href="#more"><b>🗂️ More Work</b></a> &nbsp;·&nbsp;
+<a href="#journey"><b>🛣️ Journey</b></a> &nbsp;·&nbsp;
+<a href="#experience"><b>💼 Experience</b></a> &nbsp;·&nbsp;
+<a href="#certificates"><b>📜 Certificates</b></a> &nbsp;·&nbsp;
+<a href="#education"><b>🎓 Education</b></a> &nbsp;·&nbsp;
+<a href="#contact"><b>📫 Contact</b></a>
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:36BCF7,100:2c5364&height=3" width="100%" alt=""/>
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 </div>
 
-## 🏠 About Me
+<a name="about"></a>
+<img src="assets/h-about.svg" width="100%" alt="🏠 About Me"/>
 
 > *"I turn ideas into clean, working software, and I'm growing into a designer who cares how it feels to use."*
 
@@ -67,11 +68,10 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 <div align="center">
 
-[![Portfolio Website](https://img.shields.io/badge/%F0%9F%8C%90%20View%20My%20Portfolio%20Website-36BCF7?style=for-the-badge)](https://uzairbaig991.github.io/Portfolio/)
-[![Resume](https://img.shields.io/badge/%F0%9F%93%84%20Download%20Resume-8b5cf6?style=for-the-badge)](https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf)
-[![LinkedIn](https://img.shields.io/badge/%F0%9F%92%BC%20LinkedIn-0077B5?style=for-the-badge)](https://www.linkedin.com/in/uzair-baig-b502ab2a5)
-[![Email Me](https://img.shields.io/badge/%F0%9F%93%A7%20Email%20Me-D14836?style=for-the-badge)](mailto:baiguzair53@gmail.com)
-
+<a href="https://uzairbaig991.github.io/Portfolio/"><img src="assets/btn-portfolio.svg" height="48" alt="Portfolio Website"/></a>
+<a href="https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf"><img src="assets/btn-resume.svg" height="48" alt="Resume"/></a>
+<a href="https://www.linkedin.com/in/uzair-baig-b502ab2a5"><img src="assets/btn-linkedin.svg" height="48" alt="LinkedIn"/></a>
+<a href="mailto:baiguzair53@gmail.com"><img src="assets/btn-email.svg" height="48" alt="Email Me"/></a>
 </div>
 
 <div align="center">
@@ -80,11 +80,18 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## ⚡ Tech Stack
+<a name="tech"></a>
+<img src="assets/h-tech.svg" width="100%" alt="⚡ Tech Stack"/>
 
 <!-- Remove any icon for tools you don't actually use. -->
+
+<div align="center">
+
+<img src="assets/tech-marquee.svg" width="100%" alt="Technologies: C++, Python, React.js, Node.js, Flutter, Kotlin"/>
+
+</div>
 
 <div align="center">
 
@@ -145,9 +152,10 @@ mindmap
       HCI
 ```
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🚀 Featured Projects
+<a name="projects"></a>
+<img src="assets/h-projects.svg" width="100%" alt="🚀 Featured Projects"/>
 
 <div align="center">
 
@@ -168,9 +176,10 @@ mindmap
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 📈 Portfolio at a Glance
+<a name="glance"></a>
+<img src="assets/h-glance.svg" width="100%" alt="📈 Portfolio at a Glance"/>
 
 <div align="center">
 
@@ -182,9 +191,10 @@ mindmap
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🗂️ More Projects
+<a name="more"></a>
+<img src="assets/h-more.svg" width="100%" alt="🗂️ More Projects"/>
 
 <details open>
 <summary><b>🌐 Web Applications</b></summary>
@@ -264,13 +274,13 @@ mindmap
 
 <div align="center">
 
-[![All Repositories](https://img.shields.io/badge/Browse%20All%20Repositories-%E2%86%92-36BCF7?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UzairBaig991?tab=repositories)
-
+<a href="https://github.com/UzairBaig991?tab=repositories"><img src="assets/btn-repos.svg" height="48" alt="All Repositories"/></a>
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🛣️ My Journey
+<a name="journey"></a>
+<img src="assets/h-journey.svg" width="100%" alt="🛣️ My Journey"/>
 
 <!-- Built from your repository history. EDIT any milestone to match your story. -->
 
@@ -283,9 +293,10 @@ timeline
     Next : Growing into UI and UX design : Building bigger, polished products
 ```
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 💼 Internship Experience
+<a name="experience"></a>
+<img src="assets/h-experience.svg" width="100%" alt="💼 Internship Experience"/>
 
 <!-- EDIT: add your exact role titles and dates in place of the "Intern" lines. -->
 
@@ -310,9 +321,10 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 </tr>
 </table>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 📜 Certifications
+<a name="certificates"></a>
+<img src="assets/h-certificates.svg" width="100%" alt="📜 Certifications"/>
 
 <div align="center">
 
@@ -327,16 +339,18 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <!-- EDIT: add the full certificate title, year and credential link. -->
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🎓 Education
+<a name="education"></a>
+<img src="assets/h-education.svg" width="100%" alt="🎓 Education"/>
 
 - 🏫 **BS Software Engineering**, **Riphah International University**, Rawalpindi *(in progress)*
 - 📘 **Coursework:** Data Structures & Algorithms, Operating Systems, Artificial Intelligence, Compiler Construction, Web Programming, Mobile App Development, HCI & Computer Graphics, Computer Organization, Assembly Language
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🧩 What I Do
+<a name="services"></a>
+<img src="assets/h-services.svg" width="100%" alt="🧩 What I Do"/>
 
 <table>
 <tr>
@@ -365,9 +379,10 @@ flowchart LR
 - ✅ **Design-minded.** I care about how software looks and feels, not just how it runs
 - ✅ **Always learning.** Actively growing toward a UI/UX career
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 📊 GitHub Analytics
+<a name="analytics"></a>
+<img src="assets/h-analytics.svg" width="100%" alt="📊 GitHub Analytics"/>
 
 <div align="center">
 
@@ -388,7 +403,7 @@ flowchart LR
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
 ### 🧾 Profile Summary
 
@@ -402,9 +417,10 @@ flowchart LR
 
 </div>
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 🎯 Goals & Roadmap
+<a name="roadmap"></a>
+<img src="assets/h-roadmap.svg" width="100%" alt="🎯 Goals & Roadmap"/>
 
 - [x] Build 50+ projects across web, mobile, AI and systems
 - [x] Launch a personal portfolio website
@@ -414,9 +430,10 @@ flowchart LR
 - [ ] Contribute to open-source projects
 - [ ] Land a software or design role
 
----
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-## 📫 Let's Connect
+<a name="contact"></a>
+<img src="assets/h-contact.svg" width="100%" alt="📫 Let's Connect"/>
 
 <div align="center">
 
@@ -424,12 +441,11 @@ I'm open to **internships, collaborations and freelance work**. If you have an i
 
 <br/>
 
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:baiguzair53@gmail.com)
-[![Portfolio](https://img.shields.io/badge/Portfolio-0f2027?style=for-the-badge&logo=googlechrome&logoColor=white)](https://uzairbaig991.github.io/Portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/UzairBaig991)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/uzair-baig-b502ab2a5)
-[![Resume](https://img.shields.io/badge/Resume-CV-8b5cf6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf)
-
+<a href="mailto:baiguzair53@gmail.com"><img src="assets/btn-email.svg" height="48" alt="Email"/></a>
+<a href="https://uzairbaig991.github.io/Portfolio/"><img src="assets/btn-portfolio.svg" height="48" alt="Portfolio"/></a>
+<a href="https://github.com/UzairBaig991"><img src="assets/btn-github.svg" height="48" alt="GitHub"/></a>
+<a href="https://www.linkedin.com/in/uzair-baig-b502ab2a5"><img src="assets/btn-linkedin.svg" height="48" alt="LinkedIn"/></a>
+<a href="https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf"><img src="assets/btn-resume.svg" height="48" alt="Resume"/></a>
 <br/>
 
 > 💡 *"Design is not just what it looks like. Design is how it works."* — Steve Jobs
