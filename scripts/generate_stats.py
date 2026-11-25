@@ -12,6 +12,13 @@ OUT = os.environ.get("OUT_DIR", "assets")
 FONT = "'Segoe UI', Roboto, Arial, sans-serif"
 MONO = "Consolas, 'Courier New', monospace"
 BG = "#08090f"
+COMMITS = 0
+FEATURED = ["StockWise-AI", "EcoSwap-MAD-Project", "RoyalLudo", "PDFForge", "Enterprise-Flow-ERP",
+            "OS-Simulator", "AutoFlow", "Movie-Recommendation-System", "UzairMart", "MediCare-"]
+LANG_COLORS = {"JavaScript": "#f1e05a", "TypeScript": "#3178c6", "Python": "#3572A5", "Java": "#b07219",
+               "C++": "#f34b7d", "C": "#888888", "HTML": "#e34c26", "CSS": "#563d7c", "PHP": "#4F5D95",
+               "Kotlin": "#A97BFF", "Dart": "#00B4AB", "C#": "#178600", "Shell": "#89e051",
+               "Assembly": "#6E4C13", "Jupyter Notebook": "#DA5B0B", "SCSS": "#c6538c"}
 
 
 def gql(query, token):
@@ -32,12 +39,16 @@ def fetch_days(token):
     start_year = int(created[:4])
     today = dt.date.today()
     days = {}
+    global COMMITS
+    COMMITS = 0
     for year in range(start_year, today.year + 1):
         frm = f"{year}-01-01T00:00:00Z"
         to = f"{year}-12-31T23:59:59Z"
         q = ('query{user(login:"%s"){contributionsCollection(from:"%s",to:"%s")'
-             '{contributionCalendar{weeks{contributionDays{date contributionCount}}}}}}') % (USER, frm, to)
-        cal = gql(q, token)["user"]["contributionsCollection"]["contributionCalendar"]
+             '{totalCommitContributions contributionCalendar{weeks{contributionDays{date contributionCount}}}}}}') % (USER, frm, to)
+        cc = gql(q, token)["user"]["contributionsCollection"]
+        COMMITS += cc["totalCommitContributions"]
+        cal = cc["contributionCalendar"]
         for w in cal["weeks"]:
             for d in w["contributionDays"]:
                 days[d["date"]] = d["contributionCount"]
@@ -206,6 +217,149 @@ def weekday_svg(days, pending):
     return frame(W, H, b)
 
 
+def esc(t):
+    return (t or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+
+def wrap(text, width, lines):
+    words, out, cur = (text or "").split(), [], ""
+    for w in words:
+        if len(cur) + len(w) + 1 <= width:
+            cur = (cur + " " + w).strip()
+        else:
+            out.append(cur)
+            cur = w
+    if cur:
+        out.append(cur)
+    out = out[:lines]
+    if len(words) and len(" ".join(out)) < len(" ".join(words)):
+        out[-1] = out[-1][: width - 1].rstrip() + "…"
+    return out
+
+
+def fetch_profile(token):
+    q = ('query{user(login:"%s"){followers{totalCount} following{totalCount} '
+         'pullRequests{totalCount} issues{totalCount} repositories(privacy:PUBLIC,ownerAffiliations:OWNER){totalCount}}}') % USER
+    return gql(q, token)["user"]
+
+
+def fetch_repos(token):
+    repos, page = [], 1
+    while True:
+        chunk = rest(f"/users/{USER}/repos?per_page=100&page={page}&sort=pushed", token)
+        repos += chunk
+        if len(chunk) < 100:
+            return repos
+        page += 1
+
+
+def fetch_languages(repos, token):
+    tot = {}
+    for r in repos:
+        if r["fork"]:
+            continue
+        try:
+            for k, v in rest(f"/repos/{USER}/{r['name']}/languages", token).items():
+                tot[k] = tot.get(k, 0) + v
+        except Exception:
+            pass
+    return tot
+
+
+def stats_card_svg(info):
+    W, H = 490, 220
+    pending = info is None
+    v = (lambda k: "–") if pending else (lambda k: f"{info[k]:,}")
+    items = [("Total Stars", "stars", "gB"), ("Total Commits", "commits", "gA"), ("Pull Requests", "prs", "gC"),
+             ("Issues", "issues", "gA"), ("Public Repos", "repos", "gB"), ("Followers", "followers", "gC")]
+    b = (f'<text x="28" y="40" font-family="{FONT}" font-size="21" font-weight="700" fill="#e6edf3">GitHub Stats</text>'
+         f'<text x="{W-28}" y="40" text-anchor="end" font-family="{MONO}" font-size="12" fill="#8b949e">@{USER}</text>')
+    for i, (label, key, g) in enumerate(items):
+        col, row = i % 3, i // 3
+        x, y = 28 + col * 150, 70 + row * 66
+        b += (f'<rect x="{x-8}" y="{y-6}" width="138" height="56" rx="12" fill="#ffffff" fill-opacity=".04" stroke="#36BCF7" stroke-opacity=".18"/>'
+              f'<text x="{x+4}" y="{y+26}" font-family="{FONT}" font-size="26" font-weight="800" fill="url(#{g})">{v(key)}'
+              f'<animate attributeName="opacity" from="0" to="1" dur="{0.6+i*0.15:.2f}s" fill="freeze"/></text>'
+              f'<text x="{x+4}" y="{y+43}" font-family="{FONT}" font-size="12" fill="#8b949e">{label}</text>')
+    return frame(W, H, b)
+
+
+def langs_card_svg(langs):
+    W, H = 490, 220
+    b = f'<text x="28" y="40" font-family="{FONT}" font-size="21" font-weight="700" fill="#e6edf3">Top Languages</text>'
+    if not langs:
+        b += f'<text x="28" y="110" font-family="{FONT}" font-size="14" fill="#8b949e">Syncing language data…</text>'
+        return frame(W, H, b)
+    total = sum(langs.values())
+    top = sorted(langs.items(), key=lambda kv: -kv[1])[:6]
+    other = total - sum(v for _, v in top)
+    if other > 0:
+        top.append(("Other", other))
+    x, bw = 28, W - 56
+    b += f'<clipPath id="lc"><rect x="28" y="56" width="{bw}" height="12" rx="6"/></clipPath><g clip-path="url(#lc)">'
+    for name, val in top:
+        w = bw * val / total
+        col = LANG_COLORS.get(name, "#8b949e")
+        b += (f'<rect x="{x:.1f}" y="56" width="{w:.1f}" height="12" fill="{col}"><animate attributeName="width" from="0" to="{w:.1f}" dur="1.1s" fill="freeze"/></rect>')
+        x += w
+    b += '</g>'
+    for i, (name, val) in enumerate(top):
+        col = LANG_COLORS.get(name, "#8b949e")
+        cx, cy = 28 + (i % 2) * 220, 98 + (i // 2) * 28
+        b += (f'<circle cx="{cx+5}" cy="{cy-4}" r="5" fill="{col}"/>'
+              f'<text x="{cx+18}" y="{cy}" font-family="{FONT}" font-size="14" fill="#e6edf3">{esc(name)}</text>'
+              f'<text x="{cx+196}" y="{cy}" text-anchor="end" font-family="{MONO}" font-size="13" fill="#8b949e">{100*val/total:.1f}%</text>')
+    return frame(W, H, b)
+
+
+def pin_svg(r):
+    W, H = 490, 150
+    pending = r is None
+    name = FEATURED[0] if pending else r["name"]
+    desc = "Syncing…" if pending else (r.get("description") or "")
+    lang = None if pending else r.get("language")
+    stars = 0 if pending else r["stargazers_count"]
+    forks = 0 if pending else r["forks_count"]
+    when = "" if pending else dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00")).strftime("Updated %b %-d, %Y")
+    b = (f'<rect x="1" y="1" width="{W-2}" height="{H-2}" rx="18" fill="none" stroke="url(#gA)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="120 {2*(W+H)-120}">'
+         f'<animate attributeName="stroke-dashoffset" from="0" to="-{2*(W+H)}" dur="6s" repeatCount="indefinite"/></rect>'
+         f'<text x="26" y="42" font-family="{FONT}" font-size="20" font-weight="700" fill="url(#gA)">{esc(name)}</text>')
+    for i, line in enumerate(wrap(desc, 62, 2)):
+        b += f'<text x="26" y="{70+i*20}" font-family="{FONT}" font-size="14" fill="#c9d1d9">{esc(line)}</text>'
+    y = 126
+    x = 26
+    if lang:
+        b += (f'<circle cx="{x+5}" cy="{y-4}" r="5" fill="{LANG_COLORS.get(lang, "#8b949e")}"/>'
+              f'<text x="{x+16}" y="{y}" font-family="{FONT}" font-size="13" fill="#e6edf3">{esc(lang)}</text>')
+        x += 24 + len(lang) * 8
+    b += (f'<text x="{x}" y="{y}" font-family="{FONT}" font-size="13" fill="#f7b731">★ {stars}</text>'
+          f'<text x="{x+52}" y="{y}" font-family="{FONT}" font-size="13" fill="#8b949e">⑂ {forks}</text>'
+          f'<text x="{W-26}" y="{y}" text-anchor="end" font-family="{MONO}" font-size="12" fill="#8b949e">{esc(when)}</text>')
+    return frame(W, H, b)
+
+
+def write_extra(token):
+    """Stats card, languages card and featured-project cards (all self-hosted)."""
+    repos = fetch_repos(token)
+    prof = fetch_profile(token)
+    own = [r for r in repos if not r["fork"]]
+    info = {"stars": sum(r["stargazers_count"] for r in own), "commits": COMMITS,
+            "prs": prof["pullRequests"]["totalCount"], "issues": prof["issues"]["totalCount"],
+            "repos": prof["repositories"]["totalCount"], "followers": prof["followers"]["totalCount"]}
+    write_svg("gh-stats", stats_card_svg(info))
+    write_svg("top-langs", langs_card_svg(fetch_languages(repos, token)))
+    by = {r["name"]: r for r in repos}
+    for n in FEATURED:
+        if n in by:
+            write_svg("pin-" + n, pin_svg(by[n]))
+
+
+def write_svg(name, content):
+    os.makedirs(OUT, exist_ok=True)
+    with open(f"{OUT}/{name}.svg", "w", encoding="utf-8") as f:
+        f.write(content)
+
+
 def write_data(days):
     """Export daily counts so the live dashboard can read them."""
     os.makedirs("data", exist_ok=True)
@@ -255,8 +409,14 @@ def main():
         token = os.environ["GH_TOKEN"]
         days, pending = fetch_days(token), False
         write_data(days)
+        write_extra(token)
         update_readme(token)
     os.makedirs(OUT, exist_ok=True)
+    if mode == "--pending":
+        write_svg("gh-stats", stats_card_svg(None))
+        write_svg("top-langs", langs_card_svg(None))
+        for n in FEATURED:
+            write_svg("pin-" + n, pin_svg(None).replace(esc(FEATURED[0]), esc(n)))
     for name, fn in (("streak", streak_svg), ("contributions", heatmap_svg), ("weekday", weekday_svg)):
         with open(f"{OUT}/{name}.svg", "w", encoding="utf-8") as f:
             f.write(fn(days, pending))

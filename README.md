@@ -160,20 +160,20 @@ mindmap
 
 <div align="center">
 
-<a href="https://github.com/UzairBaig991/StockWise-AI"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=StockWise-AI&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="StockWise-AI"/></a>
-<a href="https://github.com/UzairBaig991/EcoSwap-MAD-Project"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=EcoSwap-MAD-Project&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="EcoSwap"/></a>
+<a href="https://github.com/UzairBaig991/StockWise-AI"><img src="assets/pin-StockWise-AI.svg" width="49%" alt="StockWise-AI"/></a>
+<a href="https://github.com/UzairBaig991/EcoSwap-MAD-Project"><img src="assets/pin-EcoSwap-MAD-Project.svg" width="49%" alt="EcoSwap"/></a>
 
-<a href="https://github.com/UzairBaig991/RoyalLudo"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=RoyalLudo&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="RoyalLudo"/></a>
-<a href="https://github.com/UzairBaig991/PDFForge"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=PDFForge&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="PDFForge"/></a>
+<a href="https://github.com/UzairBaig991/RoyalLudo"><img src="assets/pin-RoyalLudo.svg" width="49%" alt="RoyalLudo"/></a>
+<a href="https://github.com/UzairBaig991/PDFForge"><img src="assets/pin-PDFForge.svg" width="49%" alt="PDFForge"/></a>
 
-<a href="https://github.com/UzairBaig991/Enterprise-Flow-ERP"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Enterprise-Flow-ERP&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="Enterprise Flow ERP"/></a>
-<a href="https://github.com/UzairBaig991/OS-Simulator"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=OS-Simulator&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="OS Simulator"/></a>
+<a href="https://github.com/UzairBaig991/Enterprise-Flow-ERP"><img src="assets/pin-Enterprise-Flow-ERP.svg" width="49%" alt="Enterprise Flow ERP"/></a>
+<a href="https://github.com/UzairBaig991/OS-Simulator"><img src="assets/pin-OS-Simulator.svg" width="49%" alt="OS Simulator"/></a>
 
-<a href="https://github.com/UzairBaig991/AutoFlow"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=AutoFlow&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="AutoFlow"/></a>
-<a href="https://github.com/UzairBaig991/Movie-Recommendation-System"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=Movie-Recommendation-System&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="Movie Recommendation System"/></a>
+<a href="https://github.com/UzairBaig991/AutoFlow"><img src="assets/pin-AutoFlow.svg" width="49%" alt="AutoFlow"/></a>
+<a href="https://github.com/UzairBaig991/Movie-Recommendation-System"><img src="assets/pin-Movie-Recommendation-System.svg" width="49%" alt="Movie Recommendation System"/></a>
 
-<a href="https://github.com/UzairBaig991/UzairMart"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=UzairMart&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="UzairMart"/></a>
-<a href="https://github.com/UzairBaig991/MediCare-"><img src="https://github-readme-stats.vercel.app/api/pin/?username=UzairBaig991&repo=MediCare-&theme=tokyonight&hide_border=true&bg_color=0f2027&title_color=36BCF7" alt="MediCare"/></a>
+<a href="https://github.com/UzairBaig991/UzairMart"><img src="assets/pin-UzairMart.svg" width="49%" alt="UzairMart"/></a>
+<a href="https://github.com/UzairBaig991/MediCare-"><img src="assets/pin-MediCare-.svg" width="49%" alt="MediCare"/></a>
 
 </div>
 
@@ -409,8 +409,8 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=UzairBaig991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UzairBaig991&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0f2027&title_color=36BCF7" alt="Top Languages"/>
+<img src="assets/gh-stats.svg" width="49%" alt="GitHub stats: stars, commits, pull requests, issues, repos, followers"/>
+<img src="assets/top-langs.svg" width="49%" alt="Top languages"/>
 
 <br/>
 
@@ -436,18 +436,6 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 </div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
-
-### 🧾 Profile Summary
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=UzairBaig991&theme=tokyonight" alt="Profile details" width="49%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=UzairBaig991&theme=tokyonight" alt="Repos per language" width="49%"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=UzairBaig991&theme=tokyonight" alt="Most commit language" width="49%"/>
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=UzairBaig991&theme=tokyonight" alt="Stats" width="49%"/>
-
-</div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
