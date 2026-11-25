@@ -316,8 +316,9 @@ def pin_svg(r):
     W, H = 490, 150
     pending = r is None
     name = FEATURED[0] if pending else r["name"]
-    desc = "Syncing…" if pending else (r.get("description") or "")
     lang = None if pending else r.get("language")
+    desc = "Syncing…" if pending else (r.get("description") or
+        (f"A {lang} project. Open the repository to explore the code and README." if lang else "Open the repository to explore the code and README."))
     stars = 0 if pending else r["stargazers_count"]
     forks = 0 if pending else r["forks_count"]
     when = "" if pending else dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00")).strftime("Updated %b %-d, %Y")
