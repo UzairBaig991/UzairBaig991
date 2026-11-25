@@ -2,8 +2,10 @@ name: Update profile stats
 
 on:
   schedule:
-    - cron: "17 */3 * * *"     # every 3 hours
+    - cron: "*/30 * * * *"     # every 30 minutes
   workflow_dispatch:           # lets you run it by hand from the Actions tab
+  repository_dispatch:         # lets other repos trigger an instant refresh
+    types: [repo-updated]
   push:
     paths:
       - "scripts/generate_stats.py"

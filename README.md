@@ -14,7 +14,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=UzairBaig991&label=Profile%20Views&color=0e75b6&style=for-the-badge)
 ![Followers](https://img.shields.io/github/followers/UzairBaig991?label=Followers&style=for-the-badge&logo=github&color=2c5364)
-![Repos](https://img.shields.io/badge/Public%20Repos-50%2B-203a43?style=for-the-badge&logo=github&logoColor=white)
+![Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FUzairBaig991&query=%24.public_repos&label=Public%20Repos&style=for-the-badge&logo=github&logoColor=white&color=203a43)
 ![Certified](https://img.shields.io/badge/Cisco-C%2B%2B%20Certified-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Open%20to%20Work-2ea44f?style=for-the-badge)
 
@@ -55,7 +55,7 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 | | |
 |---|---|
-| 🔭 **Recently built** | StockWise-AI · EcoSwap · RoyalLudo · PDFForge · AutoFlow |
+| 🔭 **Currently working on** | <!-- LATEST:START -->StockWise-AI · EcoSwap · RoyalLudo · PDFForge<!-- LATEST:END --> |
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
@@ -197,6 +197,8 @@ mindmap
 <a name="more"></a>
 <img src="assets/h-more.svg" width="100%" alt="🗂️ More Projects"/>
 
+<!-- Auto-generated from my live repositories every 30 minutes. Do not edit between the markers. -->
+<!-- PROJECTS:START -->
 <details open>
 <summary><b>🌐 Web Applications</b></summary>
 <br/>
@@ -272,6 +274,7 @@ mindmap
 | 📁 Early Projects | [Code](https://github.com/UzairBaig991/PROJECTS) |
 
 </details>
+<!-- PROJECTS:END -->
 
 <div align="center">
 
@@ -391,7 +394,7 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 ### ⚡ Recently Updated
 
-<!-- Auto-updated every 3 hours by .github/workflows/update-stats.yml. Do not edit between the markers. -->
+<!-- Auto-updated every 30 minutes by .github/workflows/update-stats.yml. Do not edit between the markers. -->
 <!-- RECENT:START -->
 | Repository | Language | Last push |
 |---|---|---|
