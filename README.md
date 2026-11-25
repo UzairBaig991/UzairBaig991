@@ -389,7 +389,16 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=UzairBaig991&theme=tokyonight&hide_border=true&background=0f2027&ring=36BCF7&fire=F7B731&currStreakLabel=36BCF7" alt="GitHub Streak"/>
+<!-- Self-hosted graphics below are refreshed daily by .github/workflows/update-stats.yml -->
+<img src="assets/streak.svg" width="100%" alt="GitHub contribution streak: total contributions, current streak and longest streak"/>
+
+<br/><br/>
+
+<img src="assets/contributions.svg" width="100%" alt="Contribution heatmap for the last 12 months"/>
+
+<br/><br/>
+
+<img src="assets/weekday.svg" width="100%" alt="Contributions by day of the week"/>
 
 <br/>
 
