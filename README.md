@@ -55,7 +55,9 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 | | |
 |---|---|
-| 🔭 **Currently working on** | <!-- LATEST:START -->StockWise-AI · EcoSwap · RoyalLudo · PDFForge<!-- LATEST:END --> |
+| 🔭 **Currently working on** | <!-- LATEST:START -->
+[Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Portfolio](https://github.com/UzairBaig991/Portfolio) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo)
+<!-- LATEST:END --> |
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
@@ -200,80 +202,112 @@ mindmap
 <!-- Auto-generated from my live repositories every 30 minutes. Do not edit between the markers. -->
 <!-- PROJECTS:START -->
 <details open>
-<summary><b>🌐 Web Applications</b></summary>
+<summary><b>🌐 Web Applications (14)</b></summary>
 <br/>
 
-| Project | Link |
-|---|---|
-| 🛒 UzairMart (e-commerce) | [Code](https://github.com/UzairBaig991/UzairMart) |
-| 🏥 MediCare | [Code](https://github.com/UzairBaig991/MediCare-) |
-| 💊 PharmaCare | [Code](https://github.com/UzairBaig991/pharmacare) |
-| 🩺 Prescripto | [Code](https://github.com/UzairBaig991/Prescripto) |
-| 🏋️ Gym Website | [Code](https://github.com/UzairBaig991/Gym-Website) |
-| 🐾 RecuPaws | [Code](https://github.com/UzairBaig991/RecuPaws) |
-| 🤝 Connect Hub | [Code](https://github.com/UzairBaig991/Connect-Hub) |
-| ⌨️ Type Forge | [Code](https://github.com/UzairBaig991/Type-Forge) |
-| 🏕️ Camping & Outdoor Adventure Planner | [Code](https://github.com/UzairBaig991/Camping-and-Outdoor-Adventure-Planner) |
-| 🍳 Recipe Finder | [Code](https://github.com/UzairBaig991/Recipe-Finder) |
-| 🕒 Time Zone Converter | [Code](https://github.com/UzairBaig991/Time-Zone-Converter) |
-| 💰 Crypto Currency | [Code](https://github.com/UzairBaig991/Crypto-Currency) |
-| 🎵 Music Playlist | [Code](https://github.com/UzairBaig991/MUSIC-PLAYLIST) |
-| 🗣️ Voice Assistant (lab task) | [Code](https://github.com/UzairBaig991/Web-Programming-LabTask-VoiceAssistant) |
-| 🎶 Cadence (lab task) | [Code](https://github.com/UzairBaig991/Web-Programming-lab-Task-Cadence) |
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **Smart Clinic Management System** | JavaScript | Nov 25, 2026 | [Code](https://github.com/UzairBaig991/Smart-Clinic-Management-System) |
+| **Web Programming LabTask VoiceAssistant** | JavaScript | Sep 24, 2026 | [Code](https://github.com/UzairBaig991/Web-Programming-LabTask-VoiceAssistant) |
+| **Web Programming lab Task Cadence** | HTML | Sep 24, 2026 | [Code](https://github.com/UzairBaig991/Web-Programming-lab-Task-Cadence) |
+| **Type Forge** | JavaScript | Sep 24, 2026 | [Code](https://github.com/UzairBaig991/Type-Forge) |
+| **MediCare** | HTML | Aug 28, 2026 | [Code](https://github.com/UzairBaig991/MediCare-) |
+| **Camping and Outdoor Adventure Planner** | JavaScript | Aug 19, 2026 | [Code](https://github.com/UzairBaig991/Camping-and-Outdoor-Adventure-Planner) |
+| **UzairMart** | HTML | Jul 31, 2026 | [Code](https://github.com/UzairBaig991/UzairMart) |
+| **Time Zone Converter** | JavaScript | Jun 10, 2026 | [Code](https://github.com/UzairBaig991/Time-Zone-Converter) |
+| **RecuPaws**<br/><sub>It is the Simple animal charity website for donations of animals.</sub> | HTML | Jun 9, 2026 | [Code](https://github.com/UzairBaig991/RecuPaws) |
+| **Gym Website**<br/><sub>This is my Simple Gym Website.</sub> | HTML | Jun 9, 2026 | [Code](https://github.com/UzairBaig991/Gym-Website) |
+| **pharmacare** | JavaScript | May 4, 2026 | [Code](https://github.com/UzairBaig991/pharmacare) |
+| **Connect Hub**<br/><sub>Simple Social Media Platform in which user can sent friend request to the users, posts the images and other things, like and dislike the posts and also comment on this.</sub> | JavaScript | Apr 6, 2026 | [Code](https://github.com/UzairBaig991/Connect-Hub) |
+| **MUSIC PLAYLIST**<br/><sub>Uzair’s Music Player is a complete, professional-grade web application that successfully meets and exceeds the initial requirements. </sub> | HTML | Apr 4, 2026 | [Code](https://github.com/UzairBaig991/MUSIC-PLAYLIST) |
+| **Prescripto** | JavaScript | May 5, 2025 | [Code](https://github.com/UzairBaig991/Prescripto) |
 
 </details>
 
 <details>
-<summary><b>🧩 Syntecxhub Internship Projects</b></summary>
+<summary><b>🎓 Academic & Systems (16)</b></summary>
 <br/>
 
-| Project | Link |
-|---|---|
-| 🛍️ E-commerce Store | [Code](https://github.com/UzairBaig991/Syntecxhub-E-commerce-store) |
-| ✅ Task Manager | [Code](https://github.com/UzairBaig991/Syntecxhub-Task-Manager) |
-| 👥 User Management System | [Code](https://github.com/UzairBaig991/Syntecxhub-User-Management-System) |
-| 🌦️ Weather App | [Code](https://github.com/UzairBaig991/Syntecxhub-Weather-App) |
-| 💸 Expense Tracker | [Code](https://github.com/UzairBaig991/Syntecxhub-Expense-Tracker) |
-| 📝 Notes App | [Code](https://github.com/UzairBaig991/Syntecxhub-Notes-App) |
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **Artificial Intelligence Lab**<br/><sub>In this repository, i have uploaded my AI lab tasks in which i can create the simple programs using python and other languages.</sub> | Python | Nov 18, 2026 | [Code](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) |
+| **Lexical Analyzer** | C++ | Nov 18, 2026 | [Code](https://github.com/UzairBaig991/Lexical-Analyzer) |
+| **OS Simulator** | JavaScript | Nov 18, 2026 | [Code](https://github.com/UzairBaig991/OS-Simulator) |
+| **WebProgramming10th Week** | PHP | Oct 29, 2026 | [Code](https://github.com/UzairBaig991/WebProgramming10th-Week) |
+| **WebProgramming8th Week** | PHP | Oct 29, 2026 | [Code](https://github.com/UzairBaig991/WebProgramming8th-Week) |
+| **WebProgramming6th Week** | PHP | Oct 29, 2026 | [Code](https://github.com/UzairBaig991/WebProgramming6th-Week) |
+| **PHP Practice** | PHP | Oct 18, 2026 | [Code](https://github.com/UzairBaig991/PHP-Practice) |
+| **Web Programming** | HTML | Oct 14, 2026 | [Code](https://github.com/UzairBaig991/Web-Programming) |
+| **AnalysisofAlgorithmSE** | HTML | May 31, 2025 | [Code](https://github.com/UzairBaig991/AnalysisofAlgorithmSE) |
+| **ALLSOFTWAREPROJECTS1** | Python | May 31, 2025 | [Code](https://github.com/UzairBaig991/ALLSOFTWAREPROJECTS1) |
+| **HCI And ComputerGraphics** | HTML | May 4, 2025 | [Code](https://github.com/UzairBaig991/HCI-And-ComputerGraphics) |
+| **ASM Project** | Assembly | Dec 6, 2024 | [Code](https://github.com/UzairBaig991/ASM-Project) |
+| **DSA Final Project Collaboration** | C++ | Nov 22, 2024 | [Code](https://github.com/UzairBaig991/DSA-Final-Project-Collaboration) |
+| **COALLABTASKS** | Assembly | Nov 20, 2024 | [Code](https://github.com/UzairBaig991/COALLABTASKS) |
+| **DSALATASKS** | C++ | Nov 5, 2024 | [Code](https://github.com/UzairBaig991/DSALATASKS) |
+| **PROJECTS** | C++ | Oct 30, 2024 | [Code](https://github.com/UzairBaig991/PROJECTS) |
 
 </details>
 
 <details>
-<summary><b>📱 Mobile & Games</b></summary>
+<summary><b>📱 Mobile & Games (9)</b></summary>
 <br/>
 
-| Project | Link |
-|---|---|
-| 🌱 EcoSwap (MAD project) | [Code](https://github.com/UzairBaig991/EcoSwap-MAD-Project) |
-| ❓ Quiz Android App | [Code](https://github.com/UzairBaig991/Quiz-Android-App) |
-| 📲 Mobile App Development | [Code](https://github.com/UzairBaig991/Mobile-App-Development) |
-| 🎲 RoyalLudo | [Code](https://github.com/UzairBaig991/RoyalLudo) |
-| 🎲 LudoVerse | [Code](https://github.com/UzairBaig991/LudoVerse) |
-| ✔️ To-Do Apps | [Simple](https://github.com/UzairBaig991/Simple-To-Do-App) · [Classic](https://github.com/UzairBaig991/To-Do-App) |
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **EcoSwap MAD Project** | Dart | Nov 25, 2026 | [Code](https://github.com/UzairBaig991/EcoSwap-MAD-Project) |
+| **RoyalLudo** | TypeScript | Nov 24, 2026 | [Code](https://github.com/UzairBaig991/RoyalLudo) |
+| **LudoVerse** | TypeScript | Nov 13, 2026 | [Code](https://github.com/UzairBaig991/LudoVerse) |
+| **Mobile App Development** | Dart | Nov 13, 2026 | [Code](https://github.com/UzairBaig991/Mobile-App-Development) |
+| **Quiz Android App** | Kotlin | Aug 18, 2026 | [Code](https://github.com/UzairBaig991/Quiz-Android-App) |
+| **Crypto Currency** | Kotlin | Aug 9, 2026 | [Code](https://github.com/UzairBaig991/Crypto-Currency) |
+| **Recipe Finder** | Dart | Jul 3, 2026 | [Code](https://github.com/UzairBaig991/Recipe-Finder) |
+| **Simple To Do App** | HTML | Mar 24, 2026 | [Code](https://github.com/UzairBaig991/Simple-To-Do-App) |
+| **To Do App**<br/><sub>A modern, user-friendly to-do list application built with HTML, CSS, and JavaScript for the frontend, and Node.js with Express for a simple backend. Tasks are persistently stored in a JSON file, allowing data to survive page refreshes without a full database.</sub> | JavaScript | Mar 9, 2026 | [Code](https://github.com/UzairBaig991/To-Do-App) |
 
 </details>
 
 <details>
-<summary><b>🎓 Academic & Systems</b></summary>
+<summary><b>🧩 Syntecxhub Projects (6)</b></summary>
 <br/>
 
-| Project | Link |
-|---|---|
-| 🤖 Artificial Intelligence Lab | [Code](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) |
-| 🖥️ OS Simulator | [Code](https://github.com/UzairBaig991/OS-Simulator) |
-| 🔤 Lexical Analyzer | [Code](https://github.com/UzairBaig991/Lexical-Analyzer) |
-| 📈 Analysis of Algorithms | [Code](https://github.com/UzairBaig991/AnalysisofAlgorithmSE) |
-| 🧮 DSA Final Project (Collaboration) | [Code](https://github.com/UzairBaig991/DSA-Final-Project-Collaboration) |
-| 🧮 DSA Lab Tasks | [Code](https://github.com/UzairBaig991/DSALATASKS) |
-| ⚙️ CO Lab Tasks | [Code](https://github.com/UzairBaig991/COALLABTASKS) |
-| 🧱 Assembly (ASM) Project | [Code](https://github.com/UzairBaig991/ASM-Project) |
-| 🎨 HCI & Computer Graphics | [Code](https://github.com/UzairBaig991/HCI-And-ComputerGraphics) |
-| 🌐 Web Programming (weekly work) | [Main](https://github.com/UzairBaig991/Web-Programming) · [Wk 6](https://github.com/UzairBaig991/WebProgramming6th-Week) · [Wk 8](https://github.com/UzairBaig991/WebProgramming8th-Week) · [Wk 10](https://github.com/UzairBaig991/WebProgramming10th-Week) |
-| 🐘 PHP Practice | [Code](https://github.com/UzairBaig991/PHP-Practice) |
-| 📦 All Software Projects | [Code](https://github.com/UzairBaig991/ALLSOFTWAREPROJECTS1) |
-| 📁 Early Projects | [Code](https://github.com/UzairBaig991/PROJECTS) |
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **Notes App**<br/><sub>This is the simple notes app in which the user can delete, add and edit notes.</sub> | JavaScript | Jul 2, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-Notes-App) |
+| **E commerce store** | JavaScript | May 12, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-E-commerce-store) |
+| **Task Manager** | JavaScript | May 2, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-Task-Manager) |
+| **User Management System**<br/><sub>"A modern, full-stack User Management System featuring a secure admin dashboard, real-time user statistics, and comprehensive CRUD operations for managing active and inactive accounts."</sub> | JavaScript | Apr 21, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-User-Management-System) |
+| **Weather App**<br/><sub>This is my simple weather app whuch gives the forecasting of about 5 dayds.</sub> | JavaScript | Apr 13, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-Weather-App) |
+| **Expense Tracker**<br/><sub>This is the simple Expense Tracker app for my internship project which is about to manage all the expenses and other important things.</sub> | HTML | Apr 13, 2026 | [Code](https://github.com/UzairBaig991/Syntecxhub-Expense-Tracker) |
 
 </details>
+
+<details>
+<summary><b>🛠️ AI, ERP & Tools (5)</b></summary>
+<br/>
+
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **PDFForge** | PHP | Nov 12, 2026 | [Code](https://github.com/UzairBaig991/PDFForge) |
+| **StockWise AI** | Python | Nov 4, 2026 | [Code](https://github.com/UzairBaig991/StockWise-AI) |
+| **AutoFlow** | TypeScript | Nov 2, 2026 | [Code](https://github.com/UzairBaig991/AutoFlow) |
+| **Enterprise Flow ERP** | TypeScript | Sep 2, 2026 | [Code](https://github.com/UzairBaig991/Enterprise-Flow-ERP) |
+| **Movie Recommendation System** | JavaScript | Aug 15, 2026 | [Code](https://github.com/UzairBaig991/Movie-Recommendation-System) |
+
+</details>
+
+<details>
+<summary><b>🖥️ Portfolio Sites (3)</b></summary>
+<br/>
+
+| Project | Language | Updated | Link |
+|---|---|---|---|
+| **Portfolio**<br/><sub>This is my personal portfolio website in which I can talk about my all the journey from school level to university level.</sub> | HTML | Nov 25, 2026 | [Code](https://github.com/UzairBaig991/Portfolio) |
+| **Portfolio Updated** | – | Jul 2, 2026 | [Code](https://github.com/UzairBaig991/Portfolio-Updated) |
+| **UzairBaig.github.io** | CSS | Jan 18, 2025 | [Code](https://github.com/UzairBaig991/UzairBaig.github.io) |
+
+</details>
+
 <!-- PROJECTS:END -->
 
 <div align="center">
@@ -396,16 +430,16 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <!-- Auto-updated every 30 minutes by .github/workflows/update-stats.yml. Do not edit between the markers. -->
 <!-- RECENT:START -->
-| Repository | Language | Last push |
-|---|---|---|
-| [**Portfolio**](https://github.com/UzairBaig991/Portfolio) | HTML | Nov 25, 2026 |
-| [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Dart | Nov 24, 2026 |
-| [**RoyalLudo**](https://github.com/UzairBaig991/RoyalLudo) | TypeScript | Nov 24, 2026 |
-| [**Artificial-Intelligence-Lab**](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) | Python | Nov 18, 2026 |
-| [**Lexical-Analyzer**](https://github.com/UzairBaig991/Lexical-Analyzer) | C++ | Nov 18, 2026 |
-| [**OS-Simulator**](https://github.com/UzairBaig991/OS-Simulator) | JavaScript | Nov 18, 2026 |
+| Repository | Latest change | Language | When |
+|---|---|---|---|
+| [**Smart-Clinic-Management-System**](https://github.com/UzairBaig991/Smart-Clinic-Management-System) | docs: add README with architecture overview and run instructions | JavaScript | Nov 25, 2026 |
+| [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Update app | Dart | Nov 25, 2026 |
+| [**Portfolio**](https://github.com/UzairBaig991/Portfolio) | Add live interactive GitHub dashboard | HTML | Nov 25, 2026 |
+| [**RoyalLudo**](https://github.com/UzairBaig991/RoyalLudo) | Add real persistent player database, start all stats/coins/history at  | TypeScript | Nov 24, 2026 |
+| [**Artificial-Intelligence-Lab**](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) | Tenth Lab Linear Regression | Python | Nov 18, 2026 |
+| [**Lexical-Analyzer**](https://github.com/UzairBaig991/Lexical-Analyzer) | first commit | C++ | Nov 18, 2026 |
 
-<sub>⏱ Auto-updated Nov 25, 2026 10:22 UTC</sub>
+<sub>⏱ Auto-updated Nov 25, 2026 10:30 UTC, follows my latest pushes</sub>
 <!-- RECENT:END -->
 
 ### 📈 Contribution Analytics
