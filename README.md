@@ -55,7 +55,7 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 | | |
 |---|---|
-| 🔭 **Currently working on** | <!-- LATEST:START -->[Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Portfolio](https://github.com/UzairBaig991/Portfolio) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo)<!-- LATEST:END --> |
+| 🔭 **Currently working on** | <!-- LATEST:START -->[EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [Portfolio](https://github.com/UzairBaig991/Portfolio) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo)<!-- LATEST:END --> |
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
@@ -430,14 +430,14 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 <!-- RECENT:START -->
 | Repository | Latest change | Language | When |
 |---|---|---|---|
-| [**Smart-Clinic-Management-System**](https://github.com/UzairBaig991/Smart-Clinic-Management-System) | docs: add README with architecture overview and run instructions | JavaScript | Nov 25, 2026 |
 | [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Update app | Dart | Nov 25, 2026 |
+| [**Smart-Clinic-Management-System**](https://github.com/UzairBaig991/Smart-Clinic-Management-System) | feat: add Ctrl+K command palette, inline edit/reschedule modals, CSV e | JavaScript | Nov 25, 2026 |
 | [**Portfolio**](https://github.com/UzairBaig991/Portfolio) | Add live interactive GitHub dashboard | HTML | Nov 25, 2026 |
 | [**RoyalLudo**](https://github.com/UzairBaig991/RoyalLudo) | Add real persistent player database, start all stats/coins/history at  | TypeScript | Nov 24, 2026 |
 | [**Artificial-Intelligence-Lab**](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) | Tenth Lab Linear Regression | Python | Nov 18, 2026 |
 | [**Lexical-Analyzer**](https://github.com/UzairBaig991/Lexical-Analyzer) | first commit | C++ | Nov 18, 2026 |
 
-<sub>⏱ Auto-updated Nov 25, 2026 10:31 UTC, follows my latest pushes</sub>
+<sub>⏱ Auto-updated Nov 25, 2026 20:19 UTC, follows my latest pushes</sub>
 <!-- RECENT:END -->
 
 ### 📈 Contribution Analytics
