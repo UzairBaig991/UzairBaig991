@@ -69,6 +69,7 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 <div align="center">
 
 <a href="https://uzairbaig991.github.io/Portfolio/"><img src="assets/btn-portfolio.svg" height="48" alt="Portfolio Website"/></a>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/"><img src="assets/btn-dashboard.svg" height="48" alt="Live Dashboard"/></a>
 <a href="https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf"><img src="assets/btn-resume.svg" height="48" alt="Resume"/></a>
 <a href="https://www.linkedin.com/in/uzair-baig-b502ab2a5"><img src="assets/btn-linkedin.svg" height="48" alt="LinkedIn"/></a>
 <a href="mailto:baiguzair53@gmail.com"><img src="assets/btn-email.svg" height="48" alt="Email Me"/></a>
@@ -183,11 +184,11 @@ mindmap
 
 <div align="center">
 
-<img src="assets/projects-by-category.svg" width="100%" alt="Projects by category"/>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/" title="Open the live interactive dashboard"><img src="assets/projects-by-category.svg" width="100%" alt="Projects by category"/></a>
 
 <br/><br/>
 
-<img src="assets/project-activity.svg" width="100%" alt="Project activity by month"/>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/" title="Open the live interactive dashboard"><img src="assets/project-activity.svg" width="100%" alt="Project activity by month"/></a>
 
 </div>
 
@@ -384,21 +385,38 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <div align="center">
 
+> 🖱️ **Click any graph to open my [live interactive dashboard](https://uzairbaig991.github.io/Portfolio/dashboard/)**, with hover tooltips, a real-time activity feed and a searchable repo explorer.
+
+</div>
+
+### ⚡ Recently Updated
+
+<!-- Auto-updated every 3 hours by .github/workflows/update-stats.yml. Do not edit between the markers. -->
+<!-- RECENT:START -->
+| Repository | Language | Last push |
+|---|---|---|
+| *Syncing…* | | |
+<!-- RECENT:END -->
+
+### 📈 Contribution Analytics
+
+<div align="center">
+
 <img height="180" src="https://github-readme-stats.vercel.app/api?username=UzairBaig991&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&bg_color=0f2027&title_color=36BCF7&icon_color=36BCF7" alt="GitHub Stats"/>
 <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UzairBaig991&layout=compact&theme=tokyonight&hide_border=true&langs_count=8&bg_color=0f2027&title_color=36BCF7" alt="Top Languages"/>
 
 <br/>
 
 <!-- Self-hosted graphics below are refreshed daily by .github/workflows/update-stats.yml -->
-<img src="assets/streak.svg" width="100%" alt="GitHub contribution streak: total contributions, current streak and longest streak"/>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/" title="Open the live interactive dashboard"><img src="assets/streak.svg" width="100%" alt="GitHub contribution streak: total contributions, current streak and longest streak"/></a>
 
 <br/><br/>
 
-<img src="assets/contributions.svg" width="100%" alt="Contribution heatmap for the last 12 months"/>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/" title="Open the live interactive dashboard"><img src="assets/contributions.svg" width="100%" alt="Contribution heatmap for the last 12 months"/></a>
 
 <br/><br/>
 
-<img src="assets/weekday.svg" width="100%" alt="Contributions by day of the week"/>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/" title="Open the live interactive dashboard"><img src="assets/weekday.svg" width="100%" alt="Contributions by day of the week"/></a>
 
 <br/>
 
@@ -450,6 +468,7 @@ I'm open to **internships, collaborations and freelance work**. If you have an i
 
 <a href="mailto:baiguzair53@gmail.com"><img src="assets/btn-email.svg" height="48" alt="Email"/></a>
 <a href="https://uzairbaig991.github.io/Portfolio/"><img src="assets/btn-portfolio.svg" height="48" alt="Portfolio"/></a>
+<a href="https://uzairbaig991.github.io/Portfolio/dashboard/"><img src="assets/btn-dashboard.svg" height="48" alt="Live Dashboard"/></a>
 <a href="https://github.com/UzairBaig991"><img src="assets/btn-github.svg" height="48" alt="GitHub"/></a>
 <a href="https://www.linkedin.com/in/uzair-baig-b502ab2a5"><img src="assets/btn-linkedin.svg" height="48" alt="LinkedIn"/></a>
 <a href="https://uzairbaig991.github.io/Portfolio/Uzair-Baig-CV.pdf"><img src="assets/btn-resume.svg" height="48" alt="Resume"/></a>

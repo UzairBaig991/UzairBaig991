@@ -206,6 +206,45 @@ def weekday_svg(days, pending):
     return frame(W, H, b)
 
 
+def write_data(days):
+    """Export daily counts so the live dashboard can read them."""
+    os.makedirs("data", exist_ok=True)
+    payload = {
+        "generated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "user": USER,
+        "start": days[0][0].isoformat() if days else None,
+        "counts": {d.isoformat(): c for d, c in days if c > 0},
+    }
+    with open("data/contributions.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, separators=(",", ":"))
+
+
+def rest(path, token):
+    req = urllib.request.Request("https://api.github.com" + path,
+                                 headers={"Authorization": f"bearer {token}", "Accept": "application/vnd.github+json"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        return json.load(r)
+
+
+def update_readme(token):
+    """Rewrite the block between the RECENT markers with the latest pushed repos."""
+    path = "README.md"
+    text = open(path, encoding="utf-8").read()
+    a, b = "<!-- RECENT:START -->", "<!-- RECENT:END -->"
+    if a not in text or b not in text:
+        return
+    repos = [r for r in rest(f"/users/{USER}/repos?per_page=100&sort=pushed", token) if not r["fork"] and r["name"].lower() != USER.lower()]
+    rows = ["| Repository | Language | Last push |", "|---|---|---|"]
+    for r in repos[:6]:
+        when = dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00")).strftime("%b %-d, %Y")
+        rows.append(f"| [**{r['name']}**]({r['html_url']}) | {r['language'] or '–'} | {when} |")
+    now = dt.datetime.now(dt.timezone.utc).strftime("%b %-d, %Y %H:%M UTC")
+    block = f"{a}\n" + "\n".join(rows) + f"\n\n<sub>⏱ Auto-updated {now}</sub>\n{b}"
+    head, rest_ = text.split(a, 1)
+    _, tail = rest_.split(b, 1)
+    open(path, "w", encoding="utf-8").write(head + block + tail)
+
+
 def main():
     mode = sys.argv[1] if len(sys.argv) > 1 else ""
     if mode == "--demo":
@@ -215,6 +254,8 @@ def main():
     else:
         token = os.environ["GH_TOKEN"]
         days, pending = fetch_days(token), False
+        write_data(days)
+        update_readme(token)
     os.makedirs(OUT, exist_ok=True)
     for name, fn in (("streak", streak_svg), ("contributions", heatmap_svg), ("weekday", weekday_svg)):
         with open(f"{OUT}/{name}.svg", "w", encoding="utf-8") as f:
