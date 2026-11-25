@@ -395,7 +395,14 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 <!-- RECENT:START -->
 | Repository | Language | Last push |
 |---|---|---|
-| *Syncing…* | | |
+| [**Portfolio**](https://github.com/UzairBaig991/Portfolio) | HTML | Nov 25, 2026 |
+| [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Dart | Nov 24, 2026 |
+| [**RoyalLudo**](https://github.com/UzairBaig991/RoyalLudo) | TypeScript | Nov 24, 2026 |
+| [**Artificial-Intelligence-Lab**](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) | Python | Nov 18, 2026 |
+| [**Lexical-Analyzer**](https://github.com/UzairBaig991/Lexical-Analyzer) | C++ | Nov 18, 2026 |
+| [**OS-Simulator**](https://github.com/UzairBaig991/OS-Simulator) | JavaScript | Nov 18, 2026 |
+
+<sub>⏱ Auto-updated Nov 25, 2026 10:12 UTC</sub>
 <!-- RECENT:END -->
 
 ### 📈 Contribution Analytics
