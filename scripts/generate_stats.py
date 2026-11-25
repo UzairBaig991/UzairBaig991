@@ -540,13 +540,14 @@ def md(t):
     return (t or "").replace("|", "\\|").replace("[", "\\[").replace("]", "\\]").replace("<", "&lt;")
 
 
-def replace_block(text, name, content):
+def replace_block(text, name, content, inline=False):
     a, b = f"<!-- {name}:START -->", f"<!-- {name}:END -->"
     if a not in text or b not in text:
         return text
     head, rest_ = text.split(a, 1)
     _, tail = rest_.split(b, 1)
-    return head + a + "\n" + content + "\n" + b + tail
+    sep = "" if inline else "\n"
+    return head + a + sep + content + sep + b + tail
 
 
 def projects_block(repos):
@@ -596,7 +597,7 @@ def update_readme(token):
         rows.append(f"| [**{md(r['name'])}**]({r['html_url']}) | {md((msg or '–')[:70])} | {r.get('language') or '–'} | {short_date(when or r['pushed_at'])} |")
     now = dt.datetime.now(dt.timezone.utc).strftime("%b %-d, %Y %H:%M UTC")
     text = replace_block(text, "RECENT", "\n".join(rows) + f"\n\n<sub>⏱ Auto-updated {now}, follows my latest pushes</sub>")
-    text = replace_block(text, "LATEST", " · ".join(f"[{md(r['name'])}]({r['html_url']})" for r in repos[:4]))
+    text = replace_block(text, "LATEST", " · ".join(f"[{md(r['name'])}]({r['html_url']})" for r in repos[:4]), inline=True)
     text = replace_block(text, "PROJECTS", projects_block(repos))
     open(path, "w", encoding="utf-8").write(text)
 

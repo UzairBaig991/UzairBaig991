@@ -55,9 +55,7 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 | | |
 |---|---|
-| 🔭 **Currently working on** | <!-- LATEST:START -->
-[Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Portfolio](https://github.com/UzairBaig991/Portfolio) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo)
-<!-- LATEST:END --> |
+| 🔭 **Currently working on** | <!-- LATEST:START -->[Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Portfolio](https://github.com/UzairBaig991/Portfolio) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo)<!-- LATEST:END --> |
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
