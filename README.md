@@ -416,6 +416,25 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
+<a name="live"></a>
+<img src="assets/h-live.svg" width="100%" alt="📡 Live Radar"/>
+
+<div align="center">
+
+<a href="https://github.com/UzairBaig991?tab=repositories"><img src="assets/repo-radar.svg" width="100%" alt="Repository radar showing which repos changed recently"/></a>
+
+</div>
+
+### 🛰️ Change Log
+
+> Every refresh compares all my repositories with the previous snapshot. New repos, pushes, stars and forks show up below with the commit message. The workflow checks every 10 minutes.
+
+<!-- CHANGES:START -->
+_Watching every repository. The first detected change will appear here within minutes of it happening._
+<!-- CHANGES:END -->
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
 <a name="lab"></a>
 <img src="assets/h-lab.svg" width="100%" alt="🧬 Developer Lab"/>
 

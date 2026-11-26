@@ -364,10 +364,122 @@ def write_extra(token, days=None):
         write_svg("commit-ticker", ticker_svg(commits))
     except Exception as e:  # never let the lab break the rest of the update
         print("lab graphics skipped:", repr(e))
+    try:
+        log = track_changes(own_repos(repos), token)
+        write_svg("repo-radar", radar_svg(own_repos(repos), log))
+    except Exception as e:
+        print("radar skipped:", repr(e))
     by = {r["name"]: r for r in repos}
     for n in FEATURED:
         if n in by:
             write_svg("pin-" + n, pin_svg(by[n]))
+
+
+# ---------------------------------------------------------------- change detection + radar
+def track_changes(repos, token):
+    """Diff the current repo list against the last snapshot; keep a rolling changelog."""
+    import json
+    snap_p, log_p = "data/snapshot.json", "data/changelog.json"
+    os.makedirs("data", exist_ok=True)
+    try:
+        old = json.load(open(snap_p))
+    except Exception:
+        old = None
+    try:
+        log = json.load(open(log_p))
+    except Exception:
+        log = []
+    cur = {r["name"]: {"pushed": r["pushed_at"], "stars": r["stargazers_count"], "forks": r["forks_count"],
+                       "lang": r.get("language"), "url": r["html_url"]} for r in repos}
+    now = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    if old is not None:
+        for n, c in cur.items():
+            o = old.get(n)
+            if o is None:
+                log.append({"t": now, "kind": "new", "repo": n, "url": c["url"], "msg": "New repository created"})
+            else:
+                if c["pushed"] != o.get("pushed"):
+                    msg, _ = latest_commit(n, token)
+                    log.append({"t": now, "kind": "push", "repo": n, "url": c["url"], "msg": msg or "New commits pushed"})
+                if c["stars"] > o.get("stars", 0):
+                    log.append({"t": now, "kind": "star", "repo": n, "url": c["url"], "msg": f"Starred ({c['stars']} total)"})
+                if c["forks"] > o.get("forks", 0):
+                    log.append({"t": now, "kind": "fork", "repo": n, "url": c["url"], "msg": f"Forked ({c['forks']} total)"})
+        for n in old:
+            if n not in cur:
+                log.append({"t": now, "kind": "gone", "repo": n, "url": "", "msg": "Repository removed or made private"})
+    log = log[-40:]
+    json.dump(cur, open(snap_p, "w"), indent=1)
+    json.dump(log, open(log_p, "w"), indent=1)
+    return log
+
+
+KIND_ICON = {"new": "🆕", "push": "🚀", "star": "⭐", "fork": "🍴", "gone": "🗑️"}
+
+
+def changelog_block(log):
+    if not log:
+        return ("_Watching every repository. The first detected change (new repo, push, star or fork) will appear here "
+                "within minutes of it happening._")
+    rows = ["| | Repository | What changed | Detected (UTC) |", "|---|---|---|---|"]
+    for e in reversed(log[-8:]):
+        t = dt.datetime.fromisoformat(e["t"].replace("Z", "+00:00")).strftime("%b %-d, %H:%M")
+        name = f"[**{md(e['repo'])}**]({e['url']})" if e["url"] else f"**{md(e['repo'])}**"
+        rows.append(f"| {KIND_ICON.get(e['kind'], '•')} | {name} | {md(e['msg'][:80])} | {t} |")
+    return "\n".join(rows)
+
+
+def radar_svg(repos, log):
+    """Animated repo radar: rings = how recently a repo changed, dot colour = category."""
+    import math
+    W, H, cx, cy = 1000, 460, 270, 235
+    now = dt.datetime.now(dt.timezone.utc)
+    rings = [(7, "this week"), (30, "this month"), (90, "3 months"), (9999, "older")]
+    radii = [70, 120, 170, 210]
+    b = (f'<text x="40" y="48" font-family="{FONT}" font-size="24" font-weight="700" fill="#e6edf3">Repository Radar</text>'
+         f'<text x="40" y="72" font-family="{FONT}" font-size="14" fill="#8b949e">Closer to the centre = changed more recently. Pulsing dots changed this week.</text>')
+    for r_, lab in zip(radii, [x[1] for x in rings]):
+        b += (f'<circle cx="{cx}" cy="{cy+20}" r="{r_}" fill="none" stroke="#36BCF7" stroke-opacity=".18" stroke-dasharray="3 5"/>'
+              f'<text x="{cx+4}" y="{cy+20-r_+14}" font-family="{MONO}" font-size="10" fill="#6e7681">{lab}</text>')
+    b += (f'<g><animateTransform attributeName="transform" type="rotate" from="0 {cx} {cy+20}" to="360 {cx} {cy+20}" dur="8s" repeatCount="indefinite"/>'
+          f'<path d="M{cx} {cy+20} L{cx+210} {cy+20} A210 210 0 0 0 {cx+210*math.cos(-.6):.1f} {cy+20+210*math.sin(-.6):.1f} Z" fill="url(#sweep)" opacity=".5"/>'
+          f'<line x1="{cx}" y1="{cy+20}" x2="{cx+210}" y2="{cy+20}" stroke="#36BCF7" stroke-opacity=".8" stroke-width="2"/></g>')
+    b += f'<circle cx="{cx}" cy="{cy+20}" r="6" fill="#36BCF7"/>'
+    byring = [[], [], [], []]
+    for r in repos:
+        age = (now - dt.datetime.fromisoformat(r["pushed_at"].replace("Z", "+00:00"))).days
+        i = 0 if age <= 7 else 1 if age <= 30 else 2 if age <= 90 else 3
+        byring[i].append((age, r))
+    for i, grp in enumerate(byring):
+        lo = radii[i - 1] if i else 0
+        for j, (age, r) in enumerate(sorted(grp, key=lambda x: x[1]["name"])):
+            ang = (j / max(len(grp), 1)) * 2 * math.pi + i * 0.7
+            rad = lo + (radii[i] - lo) * (0.35 + 0.55 * ((j * 37) % 10) / 10)
+            x, y = cx + rad * math.cos(ang), cy + 20 + rad * math.sin(ang)
+            col = CATS[categorize(r)][1]
+            pulse = (f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="none" stroke="{col}"><animate attributeName="r" values="5;16;5" dur="2.4s" repeatCount="indefinite"/>'
+                     f'<animate attributeName="opacity" values=".9;0;.9" dur="2.4s" repeatCount="indefinite"/></circle>') if i == 0 else ""
+            b += pulse + f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{col}"/>'
+    # legend + live feed
+    b += f'<text x="560" y="110" font-family="{FONT}" font-size="16" font-weight="700" fill="#e6edf3">Live change feed</text>'
+    y = 138
+    if not log:
+        b += f'<text x="560" y="{y}" font-family="{MONO}" font-size="13" fill="#8b949e">listening for changes…</text>'
+    for e in reversed(log[-6:]):
+        t = dt.datetime.fromisoformat(e["t"].replace("Z", "+00:00")).strftime("%b %-d %H:%M")
+        b += (f'<text x="560" y="{y}" font-family="{MONO}" font-size="12" fill="#6e7681">{t}</text>'
+              f'<text x="650" y="{y}" font-family="{FONT}" font-size="14" fill="#e6edf3">{esc(e["repo"][:26])}</text>'
+              f'<text x="650" y="{y+16}" font-family="{MONO}" font-size="11" fill="{ {"push":"#36BCF7","new":"#28c840","star":"#f7b731","fork":"#8b5cf6","gone":"#ff7b72"}.get(e["kind"], "#8b949e") }">{esc(e["kind"].upper())} · {esc(e["msg"][:44])}</text>')
+        y += 42
+    SHORT = {"web": "Web", "academic": "Academic", "mobile": "Mobile", "synt": "Syntecxhub", "tools": "AI & Tools", "sites": "Sites"}
+    for i, (k, (n, col, _)) in enumerate(CATS.items()):
+        lx, ly = 560 + (i % 3) * 140, 372 + (i // 3) * 22
+        b += f'<circle cx="{lx}" cy="{ly}" r="5" fill="{col}"/><text x="{lx+12}" y="{ly+4}" font-family="{FONT}" font-size="12" fill="#8b949e">{esc(SHORT[k])}</text>'
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%b %-d, %H:%M UTC")
+    b += (f'<circle cx="560" cy="435" r="4" fill="#28c840"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>'
+          f'<text x="572" y="439" font-family="{MONO}" font-size="12" fill="#28c840">LIVE · last sync {stamp}</text>')
+    extra = ('<radialGradient id="sweep" cx="0" cy="0" r="1"><stop offset="0" stop-color="#36BCF7" stop-opacity=".0"/><stop offset="1" stop-color="#36BCF7" stop-opacity=".35"/></radialGradient>')
+    return frame(W, H, b, extra)
 
 
 def write_svg(name, content):
@@ -798,6 +910,11 @@ def update_readme(token):
     text = replace_block(text, "RECENT", "\n".join(rows) + f"\n\n<sub>⏱ Auto-updated {now}, follows my latest pushes</sub>")
     text = replace_block(text, "LATEST", " · ".join(f"[{md(r['name'])}]({r['html_url']})" for r in repos[:4]), inline=True)
     text = replace_block(text, "PROJECTS", projects_block(repos))
+    try:
+        import json
+        text = replace_block(text, "CHANGES", changelog_block(json.load(open("data/changelog.json"))))
+    except Exception as e:
+        print("changes block skipped:", repr(e))
     open(path, "w", encoding="utf-8").write(text)
 
 
