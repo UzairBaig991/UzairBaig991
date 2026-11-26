@@ -56,7 +56,7 @@ Hi, I'm **Uzair Baig** from **Rawalpindi, Pakistan 🇵🇰**, a **BS Software E
 
 | | |
 |---|---|
-| 🔭 **Currently working on** | <!-- LATEST:START -->[EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo) · [Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System) · [Portfolio](https://github.com/UzairBaig991/Portfolio)<!-- LATEST:END --> |
+| 🔭 **Currently working on** | <!-- LATEST:START -->[EcoSwap-MAD-Project](https://github.com/UzairBaig991/EcoSwap-MAD-Project) · [Prescripto](https://github.com/UzairBaig991/Prescripto) · [RoyalLudo](https://github.com/UzairBaig991/RoyalLudo) · [Smart-Clinic-Management-System](https://github.com/UzairBaig991/Smart-Clinic-Management-System)<!-- LATEST:END --> |
 | 🌱 **Learning** | UI/UX design, Figma, advanced web & mobile development |
 | 🤝 **Open to** | Internships, collaborations, freelance projects |
 | 💬 **Ask me about** | Web development, Android apps, C++, DSA, UI design |
@@ -206,6 +206,7 @@ mindmap
 
 | Project | Language | Updated | Link |
 |---|---|---|---|
+| **Prescripto** | JavaScript | Nov 26, 2026 | [Code](https://github.com/UzairBaig991/Prescripto) |
 | **Smart Clinic Management System** | JavaScript | Nov 25, 2026 | [Code](https://github.com/UzairBaig991/Smart-Clinic-Management-System) |
 | **Web Programming LabTask VoiceAssistant** | JavaScript | Sep 24, 2026 | [Code](https://github.com/UzairBaig991/Web-Programming-LabTask-VoiceAssistant) |
 | **Web Programming lab Task Cadence** | HTML | Sep 24, 2026 | [Code](https://github.com/UzairBaig991/Web-Programming-lab-Task-Cadence) |
@@ -219,7 +220,6 @@ mindmap
 | **pharmacare** | JavaScript | May 4, 2026 | [Code](https://github.com/UzairBaig991/pharmacare) |
 | **Connect Hub**<br/><sub>Simple Social Media Platform in which user can sent friend request to the users, posts the images and other things, like and dislike the posts and also comment on this.</sub> | JavaScript | Apr 6, 2026 | [Code](https://github.com/UzairBaig991/Connect-Hub) |
 | **MUSIC PLAYLIST**<br/><sub>Uzair’s Music Player is a complete, professional-grade web application that successfully meets and exceeds the initial requirements. </sub> | HTML | Apr 4, 2026 | [Code](https://github.com/UzairBaig991/MUSIC-PLAYLIST) |
-| **Prescripto** | JavaScript | May 5, 2025 | [Code](https://github.com/UzairBaig991/Prescripto) |
 
 </details>
 
@@ -430,7 +430,10 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 > Every refresh compares all my repositories with the previous snapshot. New repos, pushes, stars and forks show up below with the commit message. The workflow checks every 10 minutes.
 
 <!-- CHANGES:START -->
-_Watching every repository. The first detected change (new repo, push, star or fork) will appear here within minutes of it happening._
+| | Repository | What changed | Detected (UTC) |
+|---|---|---|---|
+| 🚀 | [**Prescripto**](https://github.com/UzairBaig991/Prescripto) | feat: add Doctor Portal, digital prescriptions, reviews, rescheduling, search &  | Nov 26, 21:46 |
+| 🚀 | [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Update app | Nov 26, 21:46 |
 <!-- CHANGES:END -->
 
 <img src="assets/divider.svg" width="100%" alt=""/>
@@ -482,13 +485,13 @@ _Watching every repository. The first detected change (new repo, push, star or f
 | Repository | Latest change | Language | When |
 |---|---|---|---|
 | [**EcoSwap-MAD-Project**](https://github.com/UzairBaig991/EcoSwap-MAD-Project) | Update app | Dart | Nov 26, 2026 |
+| [**Prescripto**](https://github.com/UzairBaig991/Prescripto) | feat: add Doctor Portal, digital prescriptions, reviews, rescheduling, | JavaScript | Nov 26, 2026 |
 | [**RoyalLudo**](https://github.com/UzairBaig991/RoyalLudo) | Unify Expo Go mobile app with live Desktop/Server Royal Ludo game via  | TypeScript | Nov 26, 2026 |
 | [**Smart-Clinic-Management-System**](https://github.com/UzairBaig991/Smart-Clinic-Management-System) | feat: add Ctrl+K command palette, inline edit/reschedule modals, CSV e | JavaScript | Nov 25, 2026 |
 | [**Portfolio**](https://github.com/UzairBaig991/Portfolio) | Add live interactive GitHub dashboard | HTML | Nov 25, 2026 |
 | [**Artificial-Intelligence-Lab**](https://github.com/UzairBaig991/Artificial-Intelligence-Lab) | Tenth Lab Linear Regression | Python | Nov 18, 2026 |
-| [**Lexical-Analyzer**](https://github.com/UzairBaig991/Lexical-Analyzer) | first commit | C++ | Nov 18, 2026 |
 
-<sub>⏱ Auto-updated Nov 26, 2026 12:25 UTC, follows my latest pushes</sub>
+<sub>⏱ Auto-updated Nov 26, 2026 21:46 UTC, follows my latest pushes</sub>
 <!-- RECENT:END -->
 
 ### 📈 Contribution Analytics
