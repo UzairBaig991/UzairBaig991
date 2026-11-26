@@ -339,7 +339,7 @@ def pin_svg(r):
     return frame(W, H, b)
 
 
-def write_extra(token):
+def write_extra(token, days=None):
     """Stats card, languages card and featured-project cards (all self-hosted)."""
     repos = fetch_repos(token)
     prof = fetch_profile(token)
@@ -351,7 +351,19 @@ def write_extra(token):
     write_svg("project-activity", activity_chart_svg(own_repos(repos)))
     write_svg("stats", stat_row_svg(len(own_repos(repos))))
     write_svg("gh-stats", stats_card_svg(info))
-    write_svg("top-langs", langs_card_svg(fetch_languages(repos, token)))
+    langs = fetch_languages(repos, token)
+    write_svg("top-langs", langs_card_svg(langs))
+    try:
+        cur = streaks(days)[0] if days else 0
+        commits = fetch_commits(own_repos(repos), token)
+        info2 = dict(info, streak=cur)
+        write_svg("snake", snake_svg(days or []))
+        write_svg("terminal", terminal_svg(info2, commits))
+        write_svg("orbit", orbit_svg(langs))
+        write_svg("coding-clock", clock_svg(commits))
+        write_svg("commit-ticker", ticker_svg(commits))
+    except Exception as e:  # never let the lab break the rest of the update
+        print("lab graphics skipped:", repr(e))
     by = {r["name"]: r for r in repos}
     for n in FEATURED:
         if n in by:
@@ -565,6 +577,193 @@ def projects_block(repos):
     return "\n".join(out)
 
 
+# ---------------------------------------------------------------- developer lab (unique animated graphics)
+def placeholder_svg(w, h, title):
+    return frame(w, h, f'<text x="{w/2}" y="{h/2}" text-anchor="middle" font-family="{FONT}" font-size="18" fill="#8b949e">{esc(title)}: syncing live data…</text>')
+
+
+def fetch_commits(repos, token, per_repo=30, limit=20):
+    out = []
+    for r in sorted(repos, key=lambda x: x["pushed_at"], reverse=True)[:limit]:
+        try:
+            for c in rest(f"/repos/{USER}/{r['name']}/commits?per_page={per_repo}", token):
+                cm = c["commit"]
+                if cm["author"]["name"].endswith("[bot]"):
+                    continue
+                out.append({"date": cm["author"]["date"], "msg": cm["message"].split("\n")[0].strip(), "repo": r["name"]})
+        except Exception:
+            continue
+    out.sort(key=lambda x: x["date"], reverse=True)
+    return out
+
+
+def snake_svg(days):
+    today = dt.date.today()
+    start = today - dt.timedelta(days=today.weekday() + 1 if today.weekday() != 6 else 0) - dt.timedelta(weeks=52)
+    data = {d: c for d, c in days}
+    nz = sorted(c for c in data.values() if c > 0)
+    q = (lambda p: nz[min(len(nz) - 1, int(len(nz) * p))]) if nz else (lambda p: 1)
+    t1, t2, t3 = q(.4), q(.7), q(.9)
+    lvl = lambda c: 0 if c == 0 else 1 if c <= t1 else 2 if c <= t2 else 3 if c <= t3 else 4
+    cell, gap, x0, y0, step_t = 14, 3, 52, 70, 0.05
+    W, H = 1000, 220
+    pts, cells = [], []
+    for w in range(53):
+        for d in (range(7) if w % 2 == 0 else range(6, -1, -1)):
+            pts.append((x0 + w * (cell + gap) + cell / 2, y0 + d * (cell + gap) + cell / 2))
+            day = start + dt.timedelta(weeks=w, days=d)
+            if day <= today:
+                cells.append((len(pts) - 1, w, d, data.get(day, 0)))
+    T = len(pts) * step_t
+    path = "M" + " L".join(f"{x:.1f} {y:.1f}" for x, y in pts)
+    year = sum(c for d, c in data.items() if d >= today - dt.timedelta(days=365))
+    b = (f'<text x="40" y="44" font-family="{FONT}" font-size="22" font-weight="700" fill="#e6edf3">Contribution Snake</text>'
+         f'<text x="40" y="64" font-family="{FONT}" font-size="13" fill="#8b949e">Eating {year:,} contributions from the last year. It never gets full.</text>'
+         f'<path id="sp" d="{path}" fill="none"/>')
+    for i, w, d, c in cells:
+        x, y, fill = x0 + w * (cell + gap), y0 + d * (cell + gap), LEVELS[lvl(c)]
+        if c == 0:
+            b += f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{fill}"/>'
+        else:
+            p = min(0.965, i * step_t / T)
+            b += (f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{fill}">'
+                  f'<animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;{p:.4f};{p+0.004:.4f};0.985;1" dur="{T:.1f}s" repeatCount="indefinite"/></rect>')
+    n_seg = 9
+    for k in range(n_seg - 1, -1, -1):
+        size = 13 if k else 16
+        col = "url(#gA)" if k else "#f7b731"
+        begin = 0 if k == 0 else -(T - k * step_t * 1.6)
+        op = max(0.35, 1 - k * 0.07)
+        b += (f'<rect x="{-size/2}" y="{-size/2}" width="{size}" height="{size}" rx="{4 if k else 6}" fill="{col}" opacity="{op:.2f}">'
+              f'<animateMotion dur="{T:.1f}s" begin="{begin:.2f}s" repeatCount="indefinite"><mpath href="#sp"/></animateMotion></rect>')
+    return frame(W, H, b)
+
+
+def terminal_svg(info, commits):
+    if info is None:
+        return placeholder_svg(1000, 400, "Developer terminal")
+    fs, cw, lh = 16, 9.6, 27
+    lines = [("cmd", "whoami"), ("out", "uzair-baig · software engineer · aspiring UI/UX designer"),
+             ("cmd", "cat stats.json"),
+             ("out", f'{{ "repos": {info["repos"]}, "commits": {info["commits"]}, "followers": {info["followers"]}, "streak": "{info["streak"]} days" }}'),
+             ("cmd", "ls ~/skills"), ("out", "c++  python  react  node  flutter  kotlin  figma"),
+             ("cmd", "git log --oneline -3")]
+    for c in commits[:3]:
+        lines.append(("log", f'{c["repo"]}: {c["msg"]}'[:84]))
+    lines += [("cmd", "echo $STATUS"), ("out", "open to internships, collaborations & freelance work")]
+    H = 78 + len(lines) * lh + 20
+    b = ('<rect x="0" y="0" width="1000" height="44" rx="18" fill="#161b22"/><rect x="0" y="26" width="1000" height="18" fill="#161b22"/>'
+         '<circle cx="28" cy="22" r="6" fill="#ff5f57"/><circle cx="48" cy="22" r="6" fill="#febc2e"/><circle cx="68" cy="22" r="6" fill="#28c840"/>'
+         f'<text x="500" y="27" text-anchor="middle" font-family="{MONO}" font-size="13" fill="#8b949e">uzair@github: ~/profile</text>')
+    t, clips = 0.4, ""
+    last_x = last_y = 0
+    for i, (kind, text) in enumerate(lines):
+        y = 78 + i * lh
+        prefix = "$ " if kind == "cmd" else ("• " if kind == "log" else "")
+        full = prefix + text
+        wpx = len(full) * cw
+        dur = max(0.4, len(full) * 0.028)
+        clips += f'<clipPath id="tc{i}"><rect x="40" y="{y-fs-2}" height="{lh}" width="0"><animate attributeName="width" from="0" to="{wpx+4:.1f}" dur="{dur:.2f}s" begin="{t:.2f}s" fill="freeze"/></rect></clipPath>'
+        col = "#e6edf3" if kind == "cmd" else ("#7ee787" if kind == "log" else "#79c0ff")
+        pre = f'<tspan fill="#28c840">$ </tspan>' if kind == "cmd" else (f'<tspan fill="#f7b731">• </tspan>' if kind == "log" else "")
+        b += (f'<text x="40" y="{y}" clip-path="url(#tc{i})" xml:space="preserve" font-family="{MONO}" font-size="{fs}" fill="{col}" textLength="{wpx:.1f}" lengthAdjust="spacing">{pre}{esc(text)}</text>')
+        t += dur + (0.35 if kind == "cmd" else 0.2)
+        last_x, last_y = 40 + wpx + 6, y
+    b += (f'<rect x="{last_x:.1f}" y="{last_y-fs+1}" width="9" height="{fs+2}" fill="#36BCF7" opacity="0">'
+          f'<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.01;0.5;0.51;1" dur="1s" begin="{t:.2f}s" repeatCount="indefinite"/></rect>')
+    return frame(1000, int(H), clips and f'<defs>{clips}</defs>' + b)
+
+
+def orbit_svg(langs):
+    if not langs:
+        return placeholder_svg(1000, 470, "Language orbit")
+    import random
+    total = sum(langs.values())
+    top = sorted(langs.items(), key=lambda kv: -kv[1])[:7]
+    W, H, cx, cy = 1000, 470, 500, 247
+    random.seed(11)
+    b = ""
+    for _ in range(70):
+        x, y, r = random.randint(12, W - 12), random.randint(12, H - 12), random.choice([0.8, 1.1, 1.6])
+        b += f'<circle cx="{x}" cy="{y}" r="{r}" fill="#fff" opacity=".5"><animate attributeName="opacity" values=".15;.8;.15" dur="{random.uniform(2,5):.1f}s" begin="{random.uniform(0,3):.1f}s" repeatCount="indefinite"/></circle>'
+    b += (f'<text x="40" y="44" font-family="{FONT}" font-size="22" font-weight="700" fill="#e6edf3">Language Orbit</text>'
+          f'<text x="40" y="64" font-family="{FONT}" font-size="13" fill="#8b949e">Bigger planet = more code. Computed from every public repo.</text>')
+    b += f'<circle cx="{cx}" cy="{cy}" r="46" fill="url(#gA)" filter="url(#glow)" opacity=".55"><animate attributeName="r" values="44;50;44" dur="3s" repeatCount="indefinite"/></circle>'
+    b += (f'<circle cx="{cx}" cy="{cy}" r="38" fill="#08090f" stroke="url(#gA)" stroke-width="3"/>'
+          f'<text x="{cx}" y="{cy+9}" text-anchor="middle" font-family="{FONT}" font-size="26" font-weight="800" fill="url(#gA)">UB</text>')
+    for i, (name, val) in enumerate(top):
+        r = 70 + i * 20
+        share = val / total
+        pr = max(7, min(20, 7 + share * 60))
+        col = LANG_COLORS.get(name, "#8b949e")
+        dur = 14 + i * 7
+        b += f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="#fff" stroke-opacity=".08" stroke-dasharray="2 6"/>'
+        a0 = (i * 53) % 360
+        b += (f'<g><animateTransform attributeName="transform" type="rotate" from="{a0} {cx} {cy}" to="{a0+360} {cx} {cy}" dur="{dur}s" repeatCount="indefinite"/>'
+              f'<g transform="translate({cx+r} {cy})"><circle r="{pr+5:.1f}" fill="{col}" opacity=".25"/><circle r="{pr:.1f}" fill="{col}"/>'
+              f'<g><animateTransform attributeName="transform" type="rotate" from="{-a0} 0 0" to="{-a0-360} 0 0" dur="{dur}s" repeatCount="indefinite"/>'
+              f'<text y="{pr+16:.1f}" text-anchor="middle" font-family="{FONT}" font-size="12" font-weight="700" fill="#e6edf3">{esc(name)} {share*100:.0f}%</text></g></g></g>')
+    return frame(W, H, b)
+
+
+def clock_svg(commits):
+    from zoneinfo import ZoneInfo
+    import collections
+    if not commits:
+        return placeholder_svg(1000, 360, "When I code")
+    tz = ZoneInfo("Asia/Karachi")
+    hrs = collections.Counter(dt.datetime.fromisoformat(c["date"].replace("Z", "+00:00")).astimezone(tz).hour for c in commits)
+    total = sum(hrs.values())
+    mx = max(hrs.values())
+    peak = max(hrs, key=hrs.get)
+    fmt_h = lambda h: f"{(h % 12) or 12} {'AM' if h < 12 else 'PM'}"
+    persona = ("Night Owl 🦉" if peak >= 22 or peak < 5 else "Early Bird 🐦" if peak < 9 else "Daytime Coder ☀️" if peak < 18 else "Evening Hacker 🌆")
+    W, H, cx, cy, r0, rmax = 1000, 360, 250, 212, 38, 78
+    b = (f'<text x="40" y="44" font-family="{FONT}" font-size="22" font-weight="700" fill="#e6edf3">When I Code</text>'
+         f'<text x="40" y="64" font-family="{FONT}" font-size="13" fill="#8b949e">Commit times from my last {total} commits (Pakistan time)</text>')
+    b += f'<circle cx="{cx}" cy="{cy}" r="{r0-6}" fill="none" stroke="#fff" stroke-opacity=".08"/><circle cx="{cx}" cy="{cy}" r="{r0+rmax+6}" fill="none" stroke="#fff" stroke-opacity=".06" stroke-dasharray="3 5"/>'
+    for h in range(24):
+        ln = 4 + (rmax - 4) * hrs.get(h, 0) / mx
+        ang = h * 15
+        fill = "url(#peak)" if h == peak else "url(#bar)"
+        b += (f'<rect x="{cx-5}" y="{cy-r0-ln:.1f}" width="10" height="{ln:.1f}" rx="5" fill="{fill}" transform="rotate({ang} {cx} {cy})" opacity="{1 if hrs.get(h) else .25}">'
+              f'<animate attributeName="height" from="0" to="{ln:.1f}" dur="1.1s" fill="freeze"/><animate attributeName="y" from="{cy-r0}" to="{cy-r0-ln:.1f}" dur="1.1s" fill="freeze"/></rect>')
+    for h, lab in ((0, "12AM"), (6, "6AM"), (12, "12PM"), (18, "6PM")):
+        import math
+        a = math.radians(h * 15)
+        b += f'<text x="{cx+(r0+rmax+18)*math.sin(a):.1f}" y="{cy-(r0+rmax+18)*math.cos(a)+4:.1f}" text-anchor="middle" font-family="{MONO}" font-size="11" fill="#8b949e">{lab}</text>'
+    b += (f'<text x="{cx}" y="{cy-2}" text-anchor="middle" font-family="{FONT}" font-size="18" font-weight="800" fill="url(#gB)">{fmt_h(peak)}</text>'
+          f'<text x="{cx}" y="{cy+14}" text-anchor="middle" font-family="{FONT}" font-size="11" fill="#8b949e">peak hour</text>')
+    b += (f'<text x="520" y="120" font-family="{FONT}" font-size="30" font-weight="800" fill="url(#gB)">{persona}</text>'
+          f'<text x="520" y="146" font-family="{FONT}" font-size="14" fill="#c9d1d9">Most commits land around {fmt_h(peak)}.</text>')
+    blocks = [("Night  12AM-6AM", range(0, 6), "#8b5cf6"), ("Morning  6AM-12PM", range(6, 12), "#f7b731"),
+              ("Afternoon  12PM-6PM", range(12, 18), "#36BCF7"), ("Evening  6PM-12AM", range(18, 24), "#db61a2")]
+    for i, (lab, rg, col) in enumerate(blocks):
+        v = sum(hrs.get(h, 0) for h in rg)
+        pct = 100 * v / total
+        y = 190 + i * 40
+        b += (f'<text x="520" y="{y}" font-family="{MONO}" font-size="13" fill="#e6edf3">{lab}</text>'
+              f'<text x="960" y="{y}" text-anchor="end" font-family="{MONO}" font-size="13" fill="{col}">{pct:.0f}%</text>'
+              f'<rect x="520" y="{y+8}" width="440" height="7" rx="3.5" fill="#fff" fill-opacity=".07"/>'
+              f'<rect x="520" y="{y+8}" width="{max(3,4.4*pct):.1f}" height="7" rx="3.5" fill="{col}"><animate attributeName="width" from="0" to="{max(3,4.4*pct):.1f}" dur="1.2s" fill="freeze"/></rect>')
+    return frame(W, H, b)
+
+
+def ticker_svg(commits):
+    if not commits:
+        return placeholder_svg(1000, 64, "Commit ticker")
+    fs = 17
+    S = "      ◆      ".join(f'{c["repo"]}: {c["msg"][:70]}' for c in commits[:10]) + "      ◆      "
+    Wd = round(len(S) * fs * 0.6)
+    t = (f'<text x="{{x}}" y="40" font-family="{MONO}" font-size="{fs}" font-weight="700" fill="url(#tk)" xml:space="preserve" textLength="{Wd}" lengthAdjust="spacing">{esc(S)}</text>')
+    extra = (f'<linearGradient id="tk" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="500" y2="0" spreadMethod="reflect"><stop offset="0" stop-color="#36BCF7"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#db61a2"/>'
+             f'<animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="500 0" dur="6s" repeatCount="indefinite"/></linearGradient>'
+             '<clipPath id="tv"><rect x="2" y="2" width="996" height="60" rx="14"/></clipPath>')
+    body = (f'<g clip-path="url(#tv)"><g><animateTransform attributeName="transform" type="translate" from="0 0" to="-{Wd} 0" dur="{max(25, Wd//55)}s" repeatCount="indefinite"/>'
+            + t.format(x=0) + t.format(x=Wd) + t.format(x=2 * Wd) + '</g></g>')
+    return frame(1000, 64, body, extra)
+
+
 def write_data(days):
     """Export daily counts so the live dashboard can read them."""
     os.makedirs("data", exist_ok=True)
@@ -612,7 +811,7 @@ def main():
         token = os.environ["GH_TOKEN"]
         days, pending = fetch_days(token), False
         write_data(days)
-        write_extra(token)
+        write_extra(token, days)
         update_readme(token)
     os.makedirs(OUT, exist_ok=True)
     if mode == "--pending":

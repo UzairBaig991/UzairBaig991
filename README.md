@@ -28,6 +28,7 @@
 <a href="#experience"><b>💼 Experience</b></a> &nbsp;·&nbsp;
 <a href="#certificates"><b>📜 Certificates</b></a> &nbsp;·&nbsp;
 <a href="#education"><b>🎓 Education</b></a> &nbsp;·&nbsp;
+<a href="#lab"><b>🧬 Lab</b></a> &nbsp;·&nbsp;
 <a href="#contact"><b>📫 Contact</b></a>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
@@ -412,6 +413,37 @@ Delivered a series of real-world projects: <a href="https://github.com/UzairBaig
 - ✅ **Strong fundamentals.** Cisco C++ certified, with a solid DSA, OS and compiler background
 - ✅ **Design-minded.** I care about how software looks and feels, not just how it runs
 - ✅ **Always learning.** Actively growing toward a UI/UX career
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+<a name="lab"></a>
+<img src="assets/h-lab.svg" width="100%" alt="🧬 Developer Lab"/>
+
+<div align="center">
+
+<sub>Everything in this lab is generated from my real GitHub data and refreshed automatically.</sub>
+
+<br/><br/>
+
+<img src="assets/terminal.svg" width="100%" alt="Developer terminal printing my live GitHub stats and latest commits"/>
+
+<br/><br/>
+
+<img src="assets/commit-ticker.svg" width="100%" alt="Live ticker of my latest commits"/>
+
+<br/><br/>
+
+<img src="assets/snake.svg" width="100%" alt="A snake eating my contribution graph"/>
+
+<br/><br/>
+
+<img src="assets/orbit.svg" width="100%" alt="My programming languages as planets orbiting around me"/>
+
+<br/><br/>
+
+<img src="assets/coding-clock.svg" width="100%" alt="A 24-hour clock of when I commit code"/>
+
+</div>
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
